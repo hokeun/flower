@@ -89,7 +89,7 @@ class Server:
         history = History()
 
         # Initialize parameters
-        log(INFO, "[INIT]")
+        log(INFO, "Hokeun! [INIT]")
         self.parameters = self._get_initial_parameters(server_round=0, timeout=timeout)
         log(INFO, "Evaluating initial global parameters")
         res = self.strategy.evaluate(0, parameters=self.parameters)
@@ -492,7 +492,7 @@ def run_fl(
     )
 
     log(INFO, "")
-    log(INFO, "[SUMMARY]")
+    log(INFO, "Hokeun! [SUMMARY]")
     log(INFO, "Run finished %s round(s) in %.2fs", config.num_rounds, elapsed_time)
     for line in io.StringIO(str(hist)):
         log(INFO, "\t%s", line.strip("\n"))
