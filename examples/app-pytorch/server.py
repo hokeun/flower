@@ -40,6 +40,7 @@ strategy = FedAvg(
     min_available_clients=2,
     fit_metrics_aggregation_fn=weighted_average,
     initial_parameters=parameters,
+    # inplace=False,  # Hokeun! set inplace false
 )
 
 
