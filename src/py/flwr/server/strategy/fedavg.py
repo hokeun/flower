@@ -18,7 +18,7 @@ Paper: arxiv.org/abs/1602.05629
 """
 
 
-from logging import WARNING
+from logging import INFO, WARNING
 from typing import Callable, Dict, List, Optional, Tuple, Union
 
 from flwr.common import (
@@ -231,9 +231,11 @@ class FedAvg(Strategy):
             return None, {}
 
         if self.inplace:
+            log(INFO, 'Hokeun! aggregate_fit: self.inplace')
             # Does in-place weighted average of results
             aggregated_ndarrays = aggregate_inplace(results)
         else:
+            log(INFO, 'Hokeun! aggregate_fit: non inplace')
             # Convert results
             weights_results = [
                 (parameters_to_ndarrays(fit_res.parameters), fit_res.num_examples)
