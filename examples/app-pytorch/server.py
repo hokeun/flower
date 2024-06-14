@@ -1,8 +1,11 @@
+from logging import INFO
+import os
 from typing import List, Tuple
 
 from flwr.server import ServerApp, ServerConfig
 from flwr.server.strategy import FedAvg
 from flwr.common import Metrics, ndarrays_to_parameters
+from flwr.common.logger import log
 
 from task import Net, get_weights
 
@@ -43,9 +46,12 @@ strategy = FedAvg(
     # inplace=False,  # Hokeun! set inplace false
 )
 
+env_var_num_rounds = int(os.environ['HOKEUN_FLWR_NUM_ROUNDS'])
+
+log(INFO, "Hokeun! env_var_num_rounds: %i", env_var_num_rounds)
 
 # Define config
-config = ServerConfig(num_rounds=3)
+config = ServerConfig(num_rounds=env_var_num_rounds)
 
 
 # Flower ServerApp

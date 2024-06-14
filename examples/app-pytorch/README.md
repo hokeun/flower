@@ -73,3 +73,8 @@ Or, to try the custom server function example, run:
 ```bash
 flower-server-app server_custom:app --insecure
 ```
+
+## More customized commands for WPES paper expierments
+```bash
+HOKEUN_FLWR_NUM_ROUNDS=7 bash -c 'flower-simulation --server-app server:app --client-app client:app --num-supernodes 2'
+```
