@@ -35,6 +35,21 @@ def weighted_average(metrics: List[Tuple[int, Metrics]]) -> Metrics:
 ndarrays = get_weights(Net())
 parameters = ndarrays_to_parameters(ndarrays)
 
+env_var_num_rounds = int(os.environ['HOKEUN_FLWR_NUM_ROUNDS'])
+log(INFO, "Hokeun! env_var_num_rounds: %i", env_var_num_rounds)
+
+env_var_noise_enabled = False
+if 'HOKEUN_FLWR_NOISE_ENABLED' in os.environ and int(os.environ['HOKEUN_FLWR_NOISE_ENABLED']) != 0:
+    env_var_noise_enabled = True
+
+log(INFO, "Hokeun! env_var_noise_enabled: %r", env_var_noise_enabled)
+
+env_var_gauss_noise_sigma = 0.0
+if env_var_noise_enabled:
+    env_var_gauss_noise_sigma = float(os.environ['HOKEUN_FLWR_GAUSS_NOISE_SIGMA'])
+    log(INFO, "Hokeun! env_var_gauss_noise_sigma: %r", env_var_gauss_noise_sigma)
+
+
 
 # Define strategy
 strategy = FedAvg(
@@ -43,12 +58,11 @@ strategy = FedAvg(
     min_available_clients=2,
     fit_metrics_aggregation_fn=weighted_average,
     initial_parameters=parameters,
+    noise_enabled=env_var_noise_enabled,
+    gauss_noise_sigma=env_var_gauss_noise_sigma,
     # inplace=False,  # Hokeun! set inplace false
 )
 
-env_var_num_rounds = int(os.environ['HOKEUN_FLWR_NUM_ROUNDS'])
-
-log(INFO, "Hokeun! env_var_num_rounds: %i", env_var_num_rounds)
 
 # Define config
 config = ServerConfig(num_rounds=env_var_num_rounds)
