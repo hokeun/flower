@@ -73,3 +73,27 @@ Or, to try the custom server function example, run:
 ```bash
 flower-server-app server_custom:app --insecure
 ```
+
+## More customized commands for WPES paper expierments
+``bash
+HOKEUN_FLWR_NUM_ROUNDS=7 bash -c 'flower-simulation --server-app server:app --client-app client:app --num-supernodes 2'
+```
+
+To disable noise, assign 0 to `HOKEUN_FLWR_NOISE_ENABLED`:
+```bash
+HOKEUN_FLWR_NUM_ROUNDS=5 HOKEUN_FLWR_NOISE_ENABLED=0 HOKEUN_FLWR_GAUSS_NOISE_SIGMA=0.1 bash -c 'flower-simulation --server-app server:app --client-app client:app --num-supernodes 3'
+```
+
+Example command with Gaussian noise:
+```bash
+HOKEUN_FLWR_NUM_ROUNDS=5 HOKEUN_FLWR_NOISE_ENABLED=1 HOKEUN_FLWR_GAUSS_NOISE_SIGMA=0.1 bash -c 'flower-simulation --server-app server:app --client-app client:app --num-supernodes 3'
+```
+
+## Using shell script
+
+IMPORTANT! You must run `poetry shell` before running the shell script. For example:
+
+```bash
+poetry shell
+./run_experiments.sh &
+```

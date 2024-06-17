@@ -1,0 +1,115 @@
+(ClientAppActor pid=663694) INFO :      Starting training... [repeated 3x across cluster]
+INFO :      aggregate_fit: received 3 results and 0 failures
+INFO :      Hokeun! aggregate_fit: self.inplace
+INFO :      Hokeun! aggregate_inplace: beginning
+INFO :      Hokeun! aggregate_inplace: noise_enabled: False
+INFO :      Hokeun! aggregate_inplace: gauss_noise_sigma: 0.0
+INFO :      Hokeun! aggregate_inplace: len(ndarrays): 10
+INFO :      Hokeun! aggregate_inplace: len(ndarrays): 10
+INFO :      configure_evaluate: no clients selected, skipping evaluation
+INFO :
+INFO :      Hokeun! [SUMMARY]
+INFO :      Run finished 5 round(s) in 96.12s
+INFO :      	History (metrics, distributed, fit):
+INFO :      	{'train_accuracy': [(1, 0.2626266666666667),
+INFO :      	                    (2, 0.37656),
+INFO :      	                    (3, 0.43427333333333334),
+INFO :      	                    (4, 0.48339333333333334),
+INFO :      	                    (5, 0.5209533333333334)],
+INFO :      	 'train_loss': [(1, 3111.288763999939),
+INFO :      	                (2, 2636.2783563137054),
+INFO :      	                (3, 2432.4359317620597),
+INFO :      	                (4, 2231.099242488543),
+INFO :      	                (5, 2077.1603814164796)],
+INFO :      	 'val_accuracy': [(1, 0.2648),
+INFO :      	                  (2, 0.37516666666666665),
+INFO :      	                  (3, 0.43006666666666665),
+INFO :      	                  (4, 0.47583333333333333),
+INFO :      	                  (5, 0.5156666666666667)],
+INFO :      	 'val_loss': [(1, 19890.59807151556),
+INFO :      	              (2, 16862.849978710212),
+INFO :      	              (3, 15588.389818498554),
+INFO :      	              (4, 14355.181868209038),
+INFO :      	              (5, 13461.744302448738)]}
+
+
+-----------------------------------------------------------------------------------------
+
+
+(ClientAppActor pid=669727) INFO :      Starting training... [repeated 3x across cluster]
+INFO :      aggregate_fit: received 3 results and 0 failures
+INFO :      Hokeun! aggregate_fit: self.inplace
+INFO :      Hokeun! aggregate_inplace: beginning
+INFO :      Hokeun! aggregate_inplace: noise_enabled: True
+INFO :      Hokeun! aggregate_inplace: gauss_noise_sigma: 0.5
+INFO :      Hokeun! noise_factor: 0.804646
+INFO :      Hokeun! aggregate_inplace: len(ndarrays): 10
+INFO :      Hokeun! noise_factor: 0.861944
+INFO :      Hokeun! aggregate_inplace: len(ndarrays): 10
+INFO :      configure_evaluate: no clients selected, skipping evaluation
+INFO :
+INFO :      Hokeun! [SUMMARY]
+INFO :      Run finished 5 round(s) in 86.11s
+INFO :      	History (metrics, distributed, fit):
+INFO :      	{'train_accuracy': [(1, 0.29391333333333336),
+INFO :      	                    (2, 0.3678533333333333),
+INFO :      	                    (3, 0.41861333333333334),
+INFO :      	                    (4, 0.46557333333333334),
+INFO :      	                    (5, 0.5064866666666666)],
+INFO :      	 'train_loss': [(1, 3056.173280954361),
+INFO :      	                (2, 2692.5717417399087),
+INFO :      	                (3, 2502.7321223417916),
+INFO :      	                (4, 2305.85709019502),
+INFO :      	                (5, 2136.2207515239716)],
+INFO :      	 'val_accuracy': [(1, 0.29850000000000004),
+INFO :      	                  (2, 0.3683),
+INFO :      	                  (3, 0.4161666666666667),
+INFO :      	                  (4, 0.4692),
+INFO :      	                  (5, 0.5051333333333333)],
+INFO :      	 'val_loss': [(1, 19525.03346863389),
+INFO :      	              (2, 17186.626746791106),
+INFO :      	              (3, 15998.408485740423),
+INFO :      	              (4, 14755.69704998719),
+INFO :      	              (5, 13744.3956398579)]}
+
+
+-----------------------------------------------------------------------------------------
+
+
+(ClientAppActor pid=675422) INFO :      Starting training... [repeated 3x across cluster]
+INFO :      aggregate_fit: received 3 results and 0 failures
+INFO :      Hokeun! aggregate_fit: self.inplace
+INFO :      Hokeun! aggregate_inplace: beginning
+INFO :      Hokeun! aggregate_inplace: noise_enabled: True
+INFO :      Hokeun! aggregate_inplace: gauss_noise_sigma: 0.1
+INFO :      Hokeun! noise_factor: 1.056394
+INFO :      Hokeun! aggregate_inplace: len(ndarrays): 10
+INFO :      Hokeun! noise_factor: 0.949573
+INFO :      Hokeun! aggregate_inplace: len(ndarrays): 10
+INFO :      configure_evaluate: no clients selected, skipping evaluation
+INFO :
+INFO :      Hokeun! [SUMMARY]
+INFO :      Run finished 5 round(s) in 85.11s
+INFO :      	History (metrics, distributed, fit):
+INFO :      	{'train_accuracy': [(1, 0.26737333333333335),
+INFO :      	                    (2, 0.37349333333333334),
+INFO :      	                    (3, 0.43994666666666665),
+INFO :      	                    (4, 0.48291333333333336),
+INFO :      	                    (5, 0.5240666666666667)],
+INFO :      	 'train_loss': [(1, 3134.8707090616226),
+INFO :      	                (2, 2709.2759661277137),
+INFO :      	                (3, 2392.55160488685),
+INFO :      	                (4, 2242.929047127565),
+INFO :      	                (5, 2076.5026405652366)],
+INFO :      	 'val_accuracy': [(1, 0.27416666666666667),
+INFO :      	                  (2, 0.37496666666666667),
+INFO :      	                  (3, 0.44176666666666664),
+INFO :      	                  (4, 0.4823),
+INFO :      	                  (5, 0.5159666666666667)],
+INFO :      	 'val_loss': [(1, 19931.76632917424),
+INFO :      	              (2, 17240.421862681706),
+INFO :      	              (3, 15239.038378457848),
+INFO :      	              (4, 14358.611958074382),
+INFO :      	              (5, 13401.850687815033)]}
+
+

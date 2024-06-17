@@ -18,7 +18,7 @@ Paper: arxiv.org/abs/1602.05629
 """
 
 
-from logging import WARNING
+from logging import INFO, WARNING
 from typing import Callable, Dict, List, Optional, Tuple, Union
 
 from flwr.common import (
@@ -110,6 +110,10 @@ class FedAvg(Strategy):
         fit_metrics_aggregation_fn: Optional[MetricsAggregationFn] = None,
         evaluate_metrics_aggregation_fn: Optional[MetricsAggregationFn] = None,
         inplace: bool = True,
+
+        # Hokeun
+        noise_enabled: bool = False,
+        gauss_noise_sigma: float = 0.0,
     ) -> None:
         super().__init__()
 
@@ -132,6 +136,10 @@ class FedAvg(Strategy):
         self.fit_metrics_aggregation_fn = fit_metrics_aggregation_fn
         self.evaluate_metrics_aggregation_fn = evaluate_metrics_aggregation_fn
         self.inplace = inplace
+
+        # Hokeun
+        self.noise_enabled = noise_enabled
+        self.gauss_noise_sigma = gauss_noise_sigma
 
     def __repr__(self) -> str:
         """Compute a string representation of the strategy."""
@@ -231,9 +239,11 @@ class FedAvg(Strategy):
             return None, {}
 
         if self.inplace:
+            log(INFO, 'Hokeun! aggregate_fit: self.inplace')
             # Does in-place weighted average of results
-            aggregated_ndarrays = aggregate_inplace(results)
+            aggregated_ndarrays = aggregate_inplace(results, self.noise_enabled, self.gauss_noise_sigma)
         else:
+            log(INFO, 'Hokeun! aggregate_fit: non inplace')
             # Convert results
             weights_results = [
                 (parameters_to_ndarrays(fit_res.parameters), fit_res.num_examples)

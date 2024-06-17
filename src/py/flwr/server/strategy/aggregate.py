@@ -16,16 +16,20 @@
 # mypy: disallow_untyped_calls=False
 
 from functools import reduce
+from logging import INFO
 from typing import Any, Callable, List, Tuple
 
 import numpy as np
+import random
 
 from flwr.common import FitRes, NDArray, NDArrays, parameters_to_ndarrays
+from flwr.common.logger import log
 from flwr.server.client_proxy import ClientProxy
 
 
 def aggregate(results: List[Tuple[NDArrays, int]]) -> NDArrays:
     """Compute weighted average."""
+    log(INFO, 'Hokeun! aggregate: beginning')
     # Calculate the total number of examples used during training
     num_examples_total = sum(num_examples for (_, num_examples) in results)
 
@@ -42,8 +46,9 @@ def aggregate(results: List[Tuple[NDArrays, int]]) -> NDArrays:
     return weights_prime
 
 
-def aggregate_inplace(results: List[Tuple[ClientProxy, FitRes]]) -> NDArrays:
+def aggregate_inplace(results: List[Tuple[ClientProxy, FitRes]], noise_enabled: bool = False, gauss_noise_sigma: float = 0.0) -> NDArrays:
     """Compute in-place weighted average."""
+    log(INFO, 'Hokeun! aggregate_inplace: beginning')
     # Count total examples
     num_examples_total = sum(fit_res.num_examples for (_, fit_res) in results)
 
@@ -57,10 +62,21 @@ def aggregate_inplace(results: List[Tuple[ClientProxy, FitRes]]) -> NDArrays:
     params = [
         scaling_factors[0] * x for x in parameters_to_ndarrays(results[0][1].parameters)
     ]
+    log(INFO, "Hokeun! aggregate_inplace: noise_enabled: %r", noise_enabled)
+    log(INFO, "Hokeun! aggregate_inplace: gauss_noise_sigma: %r", gauss_noise_sigma)
     for i, (_, fit_res) in enumerate(results[1:]):
+        noise_factor = 1.0
+        if noise_enabled:
+            noise_factor += random.gauss(0, gauss_noise_sigma)
+            log(INFO, "Hokeun! noise_factor: %f", noise_factor)
+
+        ndarrays = parameters_to_ndarrays(fit_res.parameters)
+        log(INFO, "Hokeun! aggregate_inplace: len(ndarrays): %i", len(ndarrays))
         res = (
-            scaling_factors[i + 1] * x
-            for x in parameters_to_ndarrays(fit_res.parameters)
+            scaling_factors[i + 1] * x * noise_factor
+            # Giving 10% error.
+            # scaling_factors[i + 1] * x * 1.1 
+            for x in ndarrays
         )
         params = [reduce(np.add, layer_updates) for layer_updates in zip(params, res)]
 
