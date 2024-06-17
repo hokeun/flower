@@ -1,0 +1,461 @@
+[92mINFO [0m:      Hokeun! env_var_num_rounds: 20
+[92mINFO [0m:      Hokeun! env_var_noise_enabled: True
+[92mINFO [0m:      Hokeun! env_var_gauss_noise_sigma: 1.0
+[92mINFO [0m:      Starting Flower ServerApp, config: num_rounds=20, no round_timeout
+[92mINFO [0m:      
+[92mINFO [0m:      Hokeun! [INIT]
+[92mINFO [0m:      Using initial global parameters provided by strategy
+[92mINFO [0m:      Evaluating initial global parameters
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 1]
+[92mINFO [0m:      configure_fit: strategy sampled 5 clients (out of 5)
+[36m(ClientAppActor pid=779688)[0m [92mINFO [0m:      Starting training...
+[92mINFO [0m:      aggregate_fit: received 5 results and 0 failures
+[92mINFO [0m:      Hokeun! aggregate_fit: self.inplace
+[92mINFO [0m:      Hokeun! aggregate_inplace: beginning
+[92mINFO [0m:      Hokeun! aggregate_inplace: noise_enabled: True
+[92mINFO [0m:      Hokeun! aggregate_inplace: gauss_noise_sigma: 1.0
+[92mINFO [0m:      Hokeun! noise_factor: 2.267953
+[92mINFO [0m:      Hokeun! aggregate_inplace: len(ndarrays): 10
+[92mINFO [0m:      Hokeun! noise_factor: 0.669030
+[92mINFO [0m:      Hokeun! aggregate_inplace: len(ndarrays): 10
+[92mINFO [0m:      Hokeun! noise_factor: -0.053429
+[92mINFO [0m:      Hokeun! aggregate_inplace: len(ndarrays): 10
+[92mINFO [0m:      Hokeun! noise_factor: 0.780595
+[92mINFO [0m:      Hokeun! aggregate_inplace: len(ndarrays): 10
+[92mINFO [0m:      configure_evaluate: no clients selected, skipping evaluation
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 2]
+[92mINFO [0m:      configure_fit: strategy sampled 5 clients (out of 5)
+[36m(ClientAppActor pid=779695)[0m [92mINFO [0m:      Starting training...[32m [repeated 5x across cluster][0m
+[92mINFO [0m:      aggregate_fit: received 5 results and 0 failures
+[92mINFO [0m:      Hokeun! aggregate_fit: self.inplace
+[92mINFO [0m:      Hokeun! aggregate_inplace: beginning
+[92mINFO [0m:      Hokeun! aggregate_inplace: noise_enabled: True
+[92mINFO [0m:      Hokeun! aggregate_inplace: gauss_noise_sigma: 1.0
+[92mINFO [0m:      Hokeun! noise_factor: 1.046972
+[92mINFO [0m:      Hokeun! aggregate_inplace: len(ndarrays): 10
+[92mINFO [0m:      Hokeun! noise_factor: -0.047777
+[92mINFO [0m:      Hokeun! aggregate_inplace: len(ndarrays): 10
+[92mINFO [0m:      Hokeun! noise_factor: 1.295232
+[92mINFO [0m:      Hokeun! aggregate_inplace: len(ndarrays): 10
+[92mINFO [0m:      Hokeun! noise_factor: -0.534957
+[92mINFO [0m:      Hokeun! aggregate_inplace: len(ndarrays): 10
+[92mINFO [0m:      configure_evaluate: no clients selected, skipping evaluation
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 3]
+[92mINFO [0m:      configure_fit: strategy sampled 5 clients (out of 5)
+[36m(ClientAppActor pid=779701)[0m [92mINFO [0m:      Starting training...[32m [repeated 5x across cluster][0m
+[92mINFO [0m:      aggregate_fit: received 5 results and 0 failures
+[92mINFO [0m:      Hokeun! aggregate_fit: self.inplace
+[92mINFO [0m:      Hokeun! aggregate_inplace: beginning
+[92mINFO [0m:      Hokeun! aggregate_inplace: noise_enabled: True
+[92mINFO [0m:      Hokeun! aggregate_inplace: gauss_noise_sigma: 1.0
+[92mINFO [0m:      Hokeun! noise_factor: 0.692221
+[92mINFO [0m:      Hokeun! aggregate_inplace: len(ndarrays): 10
+[92mINFO [0m:      Hokeun! noise_factor: 2.374046
+[92mINFO [0m:      Hokeun! aggregate_inplace: len(ndarrays): 10
+[92mINFO [0m:      Hokeun! noise_factor: 0.536900
+[92mINFO [0m:      Hokeun! aggregate_inplace: len(ndarrays): 10
+[92mINFO [0m:      Hokeun! noise_factor: 1.488913
+[92mINFO [0m:      Hokeun! aggregate_inplace: len(ndarrays): 10
+[92mINFO [0m:      configure_evaluate: no clients selected, skipping evaluation
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 4]
+[92mINFO [0m:      configure_fit: strategy sampled 5 clients (out of 5)
+[36m(ClientAppActor pid=779688)[0m [92mINFO [0m:      Starting training...[32m [repeated 5x across cluster][0m
+[92mINFO [0m:      aggregate_fit: received 5 results and 0 failures
+[92mINFO [0m:      Hokeun! aggregate_fit: self.inplace
+[92mINFO [0m:      Hokeun! aggregate_inplace: beginning
+[92mINFO [0m:      Hokeun! aggregate_inplace: noise_enabled: True
+[92mINFO [0m:      Hokeun! aggregate_inplace: gauss_noise_sigma: 1.0
+[92mINFO [0m:      Hokeun! noise_factor: -0.485740
+[92mINFO [0m:      Hokeun! aggregate_inplace: len(ndarrays): 10
+[92mINFO [0m:      Hokeun! noise_factor: 0.177126
+[92mINFO [0m:      Hokeun! aggregate_inplace: len(ndarrays): 10
+[92mINFO [0m:      Hokeun! noise_factor: 1.001598
+[92mINFO [0m:      Hokeun! aggregate_inplace: len(ndarrays): 10
+[92mINFO [0m:      Hokeun! noise_factor: 0.604177
+[92mINFO [0m:      Hokeun! aggregate_inplace: len(ndarrays): 10
+[92mINFO [0m:      configure_evaluate: no clients selected, skipping evaluation
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 5]
+[92mINFO [0m:      configure_fit: strategy sampled 5 clients (out of 5)
+[36m(ClientAppActor pid=779691)[0m [92mINFO [0m:      Starting training...[32m [repeated 5x across cluster][0m
+[92mINFO [0m:      aggregate_fit: received 5 results and 0 failures
+[92mINFO [0m:      Hokeun! aggregate_fit: self.inplace
+[92mINFO [0m:      Hokeun! aggregate_inplace: beginning
+[92mINFO [0m:      Hokeun! aggregate_inplace: noise_enabled: True
+[92mINFO [0m:      Hokeun! aggregate_inplace: gauss_noise_sigma: 1.0
+[92mINFO [0m:      Hokeun! noise_factor: 0.304632
+[92mINFO [0m:      Hokeun! aggregate_inplace: len(ndarrays): 10
+[92mINFO [0m:      Hokeun! noise_factor: -0.290731
+[92mINFO [0m:      Hokeun! aggregate_inplace: len(ndarrays): 10
+[92mINFO [0m:      Hokeun! noise_factor: 1.284744
+[92mINFO [0m:      Hokeun! aggregate_inplace: len(ndarrays): 10
+[92mINFO [0m:      Hokeun! noise_factor: 1.111434
+[92mINFO [0m:      Hokeun! aggregate_inplace: len(ndarrays): 10
+[92mINFO [0m:      configure_evaluate: no clients selected, skipping evaluation
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 6]
+[92mINFO [0m:      configure_fit: strategy sampled 5 clients (out of 5)
+[36m(ClientAppActor pid=779700)[0m [92mINFO [0m:      Starting training...[32m [repeated 5x across cluster][0m
+[92mINFO [0m:      aggregate_fit: received 5 results and 0 failures
+[92mINFO [0m:      Hokeun! aggregate_fit: self.inplace
+[92mINFO [0m:      Hokeun! aggregate_inplace: beginning
+[92mINFO [0m:      Hokeun! aggregate_inplace: noise_enabled: True
+[92mINFO [0m:      Hokeun! aggregate_inplace: gauss_noise_sigma: 1.0
+[92mINFO [0m:      Hokeun! noise_factor: -0.275927
+[92mINFO [0m:      Hokeun! aggregate_inplace: len(ndarrays): 10
+[92mINFO [0m:      Hokeun! noise_factor: 0.534659
+[92mINFO [0m:      Hokeun! aggregate_inplace: len(ndarrays): 10
+[92mINFO [0m:      Hokeun! noise_factor: 0.642944
+[92mINFO [0m:      Hokeun! aggregate_inplace: len(ndarrays): 10
+[92mINFO [0m:      Hokeun! noise_factor: 2.267471
+[92mINFO [0m:      Hokeun! aggregate_inplace: len(ndarrays): 10
+[92mINFO [0m:      configure_evaluate: no clients selected, skipping evaluation
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 7]
+[92mINFO [0m:      configure_fit: strategy sampled 5 clients (out of 5)
+[36m(ClientAppActor pid=779688)[0m [92mINFO [0m:      Starting training...[32m [repeated 5x across cluster][0m
+[92mINFO [0m:      aggregate_fit: received 5 results and 0 failures
+[92mINFO [0m:      Hokeun! aggregate_fit: self.inplace
+[92mINFO [0m:      Hokeun! aggregate_inplace: beginning
+[92mINFO [0m:      Hokeun! aggregate_inplace: noise_enabled: True
+[92mINFO [0m:      Hokeun! aggregate_inplace: gauss_noise_sigma: 1.0
+[92mINFO [0m:      Hokeun! noise_factor: 0.816535
+[92mINFO [0m:      Hokeun! aggregate_inplace: len(ndarrays): 10
+[92mINFO [0m:      Hokeun! noise_factor: 2.173254
+[92mINFO [0m:      Hokeun! aggregate_inplace: len(ndarrays): 10
+[92mINFO [0m:      Hokeun! noise_factor: -0.386982
+[92mINFO [0m:      Hokeun! aggregate_inplace: len(ndarrays): 10
+[92mINFO [0m:      Hokeun! noise_factor: 0.943300
+[92mINFO [0m:      Hokeun! aggregate_inplace: len(ndarrays): 10
+[92mINFO [0m:      configure_evaluate: no clients selected, skipping evaluation
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 8]
+[92mINFO [0m:      configure_fit: strategy sampled 5 clients (out of 5)
+[36m(ClientAppActor pid=779695)[0m [92mINFO [0m:      Starting training...[32m [repeated 5x across cluster][0m
+[92mINFO [0m:      aggregate_fit: received 5 results and 0 failures
+[92mINFO [0m:      Hokeun! aggregate_fit: self.inplace
+[92mINFO [0m:      Hokeun! aggregate_inplace: beginning
+[92mINFO [0m:      Hokeun! aggregate_inplace: noise_enabled: True
+[92mINFO [0m:      Hokeun! aggregate_inplace: gauss_noise_sigma: 1.0
+[92mINFO [0m:      Hokeun! noise_factor: 1.723544
+[92mINFO [0m:      Hokeun! aggregate_inplace: len(ndarrays): 10
+[92mINFO [0m:      Hokeun! noise_factor: 0.434217
+[92mINFO [0m:      Hokeun! aggregate_inplace: len(ndarrays): 10
+[92mINFO [0m:      Hokeun! noise_factor: 1.962932
+[92mINFO [0m:      Hokeun! aggregate_inplace: len(ndarrays): 10
+[92mINFO [0m:      Hokeun! noise_factor: 2.454335
+[92mINFO [0m:      Hokeun! aggregate_inplace: len(ndarrays): 10
+[92mINFO [0m:      configure_evaluate: no clients selected, skipping evaluation
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 9]
+[92mINFO [0m:      configure_fit: strategy sampled 5 clients (out of 5)
+[36m(ClientAppActor pid=779691)[0m [92mINFO [0m:      Starting training...[32m [repeated 5x across cluster][0m
+[92mINFO [0m:      aggregate_fit: received 5 results and 0 failures
+[92mINFO [0m:      Hokeun! aggregate_fit: self.inplace
+[92mINFO [0m:      Hokeun! aggregate_inplace: beginning
+[92mINFO [0m:      Hokeun! aggregate_inplace: noise_enabled: True
+[92mINFO [0m:      Hokeun! aggregate_inplace: gauss_noise_sigma: 1.0
+[92mINFO [0m:      Hokeun! noise_factor: 0.525744
+[92mINFO [0m:      Hokeun! aggregate_inplace: len(ndarrays): 10
+[92mINFO [0m:      Hokeun! noise_factor: 1.776017
+[92mINFO [0m:      Hokeun! aggregate_inplace: len(ndarrays): 10
+[92mINFO [0m:      Hokeun! noise_factor: 0.405189
+[92mINFO [0m:      Hokeun! aggregate_inplace: len(ndarrays): 10
+[92mINFO [0m:      Hokeun! noise_factor: 0.346025
+[92mINFO [0m:      Hokeun! aggregate_inplace: len(ndarrays): 10
+[92mINFO [0m:      configure_evaluate: no clients selected, skipping evaluation
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 10]
+[92mINFO [0m:      configure_fit: strategy sampled 5 clients (out of 5)
+[36m(ClientAppActor pid=779688)[0m [92mINFO [0m:      Starting training...[32m [repeated 5x across cluster][0m
+[92mINFO [0m:      aggregate_fit: received 5 results and 0 failures
+[92mINFO [0m:      Hokeun! aggregate_fit: self.inplace
+[92mINFO [0m:      Hokeun! aggregate_inplace: beginning
+[92mINFO [0m:      Hokeun! aggregate_inplace: noise_enabled: True
+[92mINFO [0m:      Hokeun! aggregate_inplace: gauss_noise_sigma: 1.0
+[92mINFO [0m:      Hokeun! noise_factor: 1.681156
+[92mINFO [0m:      Hokeun! aggregate_inplace: len(ndarrays): 10
+[92mINFO [0m:      Hokeun! noise_factor: 1.962030
+[92mINFO [0m:      Hokeun! aggregate_inplace: len(ndarrays): 10
+[92mINFO [0m:      Hokeun! noise_factor: -0.920988
+[92mINFO [0m:      Hokeun! aggregate_inplace: len(ndarrays): 10
+[92mINFO [0m:      Hokeun! noise_factor: 0.031473
+[92mINFO [0m:      Hokeun! aggregate_inplace: len(ndarrays): 10
+[92mINFO [0m:      configure_evaluate: no clients selected, skipping evaluation
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 11]
+[92mINFO [0m:      configure_fit: strategy sampled 5 clients (out of 5)
+[36m(ClientAppActor pid=779694)[0m [92mINFO [0m:      Starting training...[32m [repeated 5x across cluster][0m
+[92mINFO [0m:      aggregate_fit: received 5 results and 0 failures
+[92mINFO [0m:      Hokeun! aggregate_fit: self.inplace
+[92mINFO [0m:      Hokeun! aggregate_inplace: beginning
+[92mINFO [0m:      Hokeun! aggregate_inplace: noise_enabled: True
+[92mINFO [0m:      Hokeun! aggregate_inplace: gauss_noise_sigma: 1.0
+[92mINFO [0m:      Hokeun! noise_factor: 1.003229
+[92mINFO [0m:      Hokeun! aggregate_inplace: len(ndarrays): 10
+[92mINFO [0m:      Hokeun! noise_factor: 0.858460
+[92mINFO [0m:      Hokeun! aggregate_inplace: len(ndarrays): 10
+[92mINFO [0m:      Hokeun! noise_factor: 0.097444
+[92mINFO [0m:      Hokeun! aggregate_inplace: len(ndarrays): 10
+[92mINFO [0m:      Hokeun! noise_factor: 2.555657
+[92mINFO [0m:      Hokeun! aggregate_inplace: len(ndarrays): 10
+[92mINFO [0m:      configure_evaluate: no clients selected, skipping evaluation
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 12]
+[92mINFO [0m:      configure_fit: strategy sampled 5 clients (out of 5)
+[36m(ClientAppActor pid=779695)[0m [92mINFO [0m:      Starting training...[32m [repeated 5x across cluster][0m
+[92mINFO [0m:      aggregate_fit: received 5 results and 0 failures
+[92mINFO [0m:      Hokeun! aggregate_fit: self.inplace
+[92mINFO [0m:      Hokeun! aggregate_inplace: beginning
+[92mINFO [0m:      Hokeun! aggregate_inplace: noise_enabled: True
+[92mINFO [0m:      Hokeun! aggregate_inplace: gauss_noise_sigma: 1.0
+[92mINFO [0m:      Hokeun! noise_factor: -0.475244
+[92mINFO [0m:      Hokeun! aggregate_inplace: len(ndarrays): 10
+[92mINFO [0m:      Hokeun! noise_factor: 1.296575
+[92mINFO [0m:      Hokeun! aggregate_inplace: len(ndarrays): 10
+[92mINFO [0m:      Hokeun! noise_factor: 1.362456
+[92mINFO [0m:      Hokeun! aggregate_inplace: len(ndarrays): 10
+[92mINFO [0m:      Hokeun! noise_factor: 1.714028
+[92mINFO [0m:      Hokeun! aggregate_inplace: len(ndarrays): 10
+[92mINFO [0m:      configure_evaluate: no clients selected, skipping evaluation
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 13]
+[92mINFO [0m:      configure_fit: strategy sampled 5 clients (out of 5)
+[36m(ClientAppActor pid=779691)[0m [92mINFO [0m:      Starting training...[32m [repeated 5x across cluster][0m
+[92mINFO [0m:      aggregate_fit: received 5 results and 0 failures
+[92mINFO [0m:      Hokeun! aggregate_fit: self.inplace
+[92mINFO [0m:      Hokeun! aggregate_inplace: beginning
+[92mINFO [0m:      Hokeun! aggregate_inplace: noise_enabled: True
+[92mINFO [0m:      Hokeun! aggregate_inplace: gauss_noise_sigma: 1.0
+[92mINFO [0m:      Hokeun! noise_factor: 0.564353
+[92mINFO [0m:      Hokeun! aggregate_inplace: len(ndarrays): 10
+[92mINFO [0m:      Hokeun! noise_factor: 1.721901
+[92mINFO [0m:      Hokeun! aggregate_inplace: len(ndarrays): 10
+[92mINFO [0m:      Hokeun! noise_factor: 2.239703
+[92mINFO [0m:      Hokeun! aggregate_inplace: len(ndarrays): 10
+[92mINFO [0m:      Hokeun! noise_factor: 2.218691
+[92mINFO [0m:      Hokeun! aggregate_inplace: len(ndarrays): 10
+[92mINFO [0m:      configure_evaluate: no clients selected, skipping evaluation
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 14]
+[92mINFO [0m:      configure_fit: strategy sampled 5 clients (out of 5)
+[36m(ClientAppActor pid=779690)[0m [92mINFO [0m:      Starting training...[32m [repeated 5x across cluster][0m
+[92mINFO [0m:      aggregate_fit: received 5 results and 0 failures
+[92mINFO [0m:      Hokeun! aggregate_fit: self.inplace
+[92mINFO [0m:      Hokeun! aggregate_inplace: beginning
+[92mINFO [0m:      Hokeun! aggregate_inplace: noise_enabled: True
+[92mINFO [0m:      Hokeun! aggregate_inplace: gauss_noise_sigma: 1.0
+[92mINFO [0m:      Hokeun! noise_factor: 0.130872
+[92mINFO [0m:      Hokeun! aggregate_inplace: len(ndarrays): 10
+[92mINFO [0m:      Hokeun! noise_factor: 0.879386
+[92mINFO [0m:      Hokeun! aggregate_inplace: len(ndarrays): 10
+[92mINFO [0m:      Hokeun! noise_factor: 1.283137
+[92mINFO [0m:      Hokeun! aggregate_inplace: len(ndarrays): 10
+[92mINFO [0m:      Hokeun! noise_factor: 2.039991
+[92mINFO [0m:      Hokeun! aggregate_inplace: len(ndarrays): 10
+[92mINFO [0m:      configure_evaluate: no clients selected, skipping evaluation
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 15]
+[92mINFO [0m:      configure_fit: strategy sampled 5 clients (out of 5)
+[36m(ClientAppActor pid=779695)[0m [92mINFO [0m:      Starting training...[32m [repeated 5x across cluster][0m
+[92mINFO [0m:      aggregate_fit: received 5 results and 0 failures
+[92mINFO [0m:      Hokeun! aggregate_fit: self.inplace
+[92mINFO [0m:      Hokeun! aggregate_inplace: beginning
+[92mINFO [0m:      Hokeun! aggregate_inplace: noise_enabled: True
+[92mINFO [0m:      Hokeun! aggregate_inplace: gauss_noise_sigma: 1.0
+[92mINFO [0m:      Hokeun! noise_factor: 0.567433
+[92mINFO [0m:      Hokeun! aggregate_inplace: len(ndarrays): 10
+[92mINFO [0m:      Hokeun! noise_factor: 0.704961
+[92mINFO [0m:      Hokeun! aggregate_inplace: len(ndarrays): 10
+[92mINFO [0m:      Hokeun! noise_factor: -0.101222
+[92mINFO [0m:      Hokeun! aggregate_inplace: len(ndarrays): 10
+[92mINFO [0m:      Hokeun! noise_factor: 0.673107
+[92mINFO [0m:      Hokeun! aggregate_inplace: len(ndarrays): 10
+[92mINFO [0m:      configure_evaluate: no clients selected, skipping evaluation
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 16]
+[92mINFO [0m:      configure_fit: strategy sampled 5 clients (out of 5)
+[36m(ClientAppActor pid=779691)[0m [92mINFO [0m:      Starting training...[32m [repeated 5x across cluster][0m
+[92mINFO [0m:      aggregate_fit: received 5 results and 0 failures
+[92mINFO [0m:      Hokeun! aggregate_fit: self.inplace
+[92mINFO [0m:      Hokeun! aggregate_inplace: beginning
+[92mINFO [0m:      Hokeun! aggregate_inplace: noise_enabled: True
+[92mINFO [0m:      Hokeun! aggregate_inplace: gauss_noise_sigma: 1.0
+[92mINFO [0m:      Hokeun! noise_factor: 1.334945
+[92mINFO [0m:      Hokeun! aggregate_inplace: len(ndarrays): 10
+[92mINFO [0m:      Hokeun! noise_factor: -0.620536
+[92mINFO [0m:      Hokeun! aggregate_inplace: len(ndarrays): 10
+[92mINFO [0m:      Hokeun! noise_factor: 0.343340
+[92mINFO [0m:      Hokeun! aggregate_inplace: len(ndarrays): 10
+[92mINFO [0m:      Hokeun! noise_factor: 2.436319
+[92mINFO [0m:      Hokeun! aggregate_inplace: len(ndarrays): 10
+[92mINFO [0m:      configure_evaluate: no clients selected, skipping evaluation
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 17]
+[92mINFO [0m:      configure_fit: strategy sampled 5 clients (out of 5)
+[36m(ClientAppActor pid=779690)[0m [92mINFO [0m:      Starting training...[32m [repeated 5x across cluster][0m
+[92mINFO [0m:      aggregate_fit: received 5 results and 0 failures
+[92mINFO [0m:      Hokeun! aggregate_fit: self.inplace
+[92mINFO [0m:      Hokeun! aggregate_inplace: beginning
+[92mINFO [0m:      Hokeun! aggregate_inplace: noise_enabled: True
+[92mINFO [0m:      Hokeun! aggregate_inplace: gauss_noise_sigma: 1.0
+[92mINFO [0m:      Hokeun! noise_factor: 0.283591
+[92mINFO [0m:      Hokeun! aggregate_inplace: len(ndarrays): 10
+[92mINFO [0m:      Hokeun! noise_factor: 0.220512
+[92mINFO [0m:      Hokeun! aggregate_inplace: len(ndarrays): 10
+[92mINFO [0m:      Hokeun! noise_factor: 0.761996
+[92mINFO [0m:      Hokeun! aggregate_inplace: len(ndarrays): 10
+[92mINFO [0m:      Hokeun! noise_factor: -0.177519
+[92mINFO [0m:      Hokeun! aggregate_inplace: len(ndarrays): 10
+[92mINFO [0m:      configure_evaluate: no clients selected, skipping evaluation
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 18]
+[92mINFO [0m:      configure_fit: strategy sampled 5 clients (out of 5)
+[36m(ClientAppActor pid=779695)[0m [92mINFO [0m:      Starting training...[32m [repeated 5x across cluster][0m
+[92mINFO [0m:      aggregate_fit: received 5 results and 0 failures
+[92mINFO [0m:      Hokeun! aggregate_fit: self.inplace
+[92mINFO [0m:      Hokeun! aggregate_inplace: beginning
+[92mINFO [0m:      Hokeun! aggregate_inplace: noise_enabled: True
+[92mINFO [0m:      Hokeun! aggregate_inplace: gauss_noise_sigma: 1.0
+[92mINFO [0m:      Hokeun! noise_factor: 1.712555
+[92mINFO [0m:      Hokeun! aggregate_inplace: len(ndarrays): 10
+[92mINFO [0m:      Hokeun! noise_factor: -0.721664
+[92mINFO [0m:      Hokeun! aggregate_inplace: len(ndarrays): 10
+[92mINFO [0m:      Hokeun! noise_factor: 2.042989
+[92mINFO [0m:      Hokeun! aggregate_inplace: len(ndarrays): 10
+[92mINFO [0m:      Hokeun! noise_factor: 1.740445
+[92mINFO [0m:      Hokeun! aggregate_inplace: len(ndarrays): 10
+[92mINFO [0m:      configure_evaluate: no clients selected, skipping evaluation
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 19]
+[92mINFO [0m:      configure_fit: strategy sampled 5 clients (out of 5)
+[36m(ClientAppActor pid=779688)[0m [92mINFO [0m:      Starting training...[32m [repeated 5x across cluster][0m
+[92mINFO [0m:      aggregate_fit: received 5 results and 0 failures
+[92mINFO [0m:      Hokeun! aggregate_fit: self.inplace
+[92mINFO [0m:      Hokeun! aggregate_inplace: beginning
+[92mINFO [0m:      Hokeun! aggregate_inplace: noise_enabled: True
+[92mINFO [0m:      Hokeun! aggregate_inplace: gauss_noise_sigma: 1.0
+[92mINFO [0m:      Hokeun! noise_factor: -0.916348
+[92mINFO [0m:      Hokeun! aggregate_inplace: len(ndarrays): 10
+[92mINFO [0m:      Hokeun! noise_factor: 2.884533
+[92mINFO [0m:      Hokeun! aggregate_inplace: len(ndarrays): 10
+[92mINFO [0m:      Hokeun! noise_factor: 1.315139
+[92mINFO [0m:      Hokeun! aggregate_inplace: len(ndarrays): 10
+[92mINFO [0m:      Hokeun! noise_factor: -0.103804
+[92mINFO [0m:      Hokeun! aggregate_inplace: len(ndarrays): 10
+[92mINFO [0m:      configure_evaluate: no clients selected, skipping evaluation
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 20]
+[92mINFO [0m:      configure_fit: strategy sampled 5 clients (out of 5)
+[36m(ClientAppActor pid=779691)[0m [92mINFO [0m:      Starting training...[32m [repeated 5x across cluster][0m
+[92mINFO [0m:      aggregate_fit: received 5 results and 0 failures
+[92mINFO [0m:      Hokeun! aggregate_fit: self.inplace
+[92mINFO [0m:      Hokeun! aggregate_inplace: beginning
+[92mINFO [0m:      Hokeun! aggregate_inplace: noise_enabled: True
+[92mINFO [0m:      Hokeun! aggregate_inplace: gauss_noise_sigma: 1.0
+[92mINFO [0m:      Hokeun! noise_factor: 0.193290
+[92mINFO [0m:      Hokeun! aggregate_inplace: len(ndarrays): 10
+[92mINFO [0m:      Hokeun! noise_factor: -0.083979
+[92mINFO [0m:      Hokeun! aggregate_inplace: len(ndarrays): 10
+[92mINFO [0m:      Hokeun! noise_factor: 0.808137
+[92mINFO [0m:      Hokeun! aggregate_inplace: len(ndarrays): 10
+[92mINFO [0m:      Hokeun! noise_factor: 1.567323
+[92mINFO [0m:      Hokeun! aggregate_inplace: len(ndarrays): 10
+[92mINFO [0m:      configure_evaluate: no clients selected, skipping evaluation
+[92mINFO [0m:      
+[92mINFO [0m:      Hokeun! [SUMMARY]
+[92mINFO [0m:      Run finished 20 round(s) in 504.64s
+[92mINFO [0m:      	History (metrics, distributed, fit):
+[92mINFO [0m:      	{'train_accuracy': [(1, 0.170028),
+[92mINFO [0m:      	                    (2, 0.323528),
+[92mINFO [0m:      	                    (3, 0.344188),
+[92mINFO [0m:      	                    (4, 0.415372),
+[92mINFO [0m:      	                    (5, 0.401672),
+[92mINFO [0m:      	                    (6, 0.4171),
+[92mINFO [0m:      	                    (7, 0.44066),
+[92mINFO [0m:      	                    (8, 0.456476),
+[92mINFO [0m:      	                    (9, 0.50114),
+[92mINFO [0m:      	                    (10, 0.511208),
+[92mINFO [0m:      	                    (11, 0.51794),
+[92mINFO [0m:      	                    (12, 0.55112),
+[92mINFO [0m:      	                    (13, 0.563456),
+[92mINFO [0m:      	                    (14, 0.588812),
+[92mINFO [0m:      	                    (15, 0.610404),
+[92mINFO [0m:      	                    (16, 0.590912),
+[92mINFO [0m:      	                    (17, 0.604668),
+[92mINFO [0m:      	                    (18, 0.51978),
+[92mINFO [0m:      	                    (19, 0.581032),
+[92mINFO [0m:      	                    (20, 0.596136)],
+[92mINFO [0m:      	 'train_loss': [(1, 3561.9926447868347),
+[92mINFO [0m:      	                (2, 2902.8032242298127),
+[92mINFO [0m:      	                (3, 2758.89953918457),
+[92mINFO [0m:      	                (4, 2479.830017232895),
+[92mINFO [0m:      	                (5, 2535.160883665085),
+[92mINFO [0m:      	                (6, 2461.9966354846956),
+[92mINFO [0m:      	                (7, 2362.512700021267),
+[92mINFO [0m:      	                (8, 2292.8989355921744),
+[92mINFO [0m:      	                (9, 2124.8455824732782),
+[92mINFO [0m:      	                (10, 2078.138373541832),
+[92mINFO [0m:      	                (11, 2065.9007807254793),
+[92mINFO [0m:      	                (12, 1937.2385861754417),
+[92mINFO [0m:      	                (13, 1895.3709129571914),
+[92mINFO [0m:      	                (14, 1791.7543707489967),
+[92mINFO [0m:      	                (15, 1698.7194423794747),
+[92mINFO [0m:      	                (16, 1785.94948335886),
+[92mINFO [0m:      	                (17, 1734.5003436923027),
+[92mINFO [0m:      	                (18, 2077.1798892974853),
+[92mINFO [0m:      	                (19, 1828.1205429434776),
+[92mINFO [0m:      	                (20, 1768.5898973941803)],
+[92mINFO [0m:      	 'val_accuracy': [(1, 0.16804),
+[92mINFO [0m:      	                  (2, 0.32288),
+[92mINFO [0m:      	                  (3, 0.34564),
+[92mINFO [0m:      	                  (4, 0.41294),
+[92mINFO [0m:      	                  (5, 0.40212),
+[92mINFO [0m:      	                  (6, 0.41582),
+[92mINFO [0m:      	                  (7, 0.4396),
+[92mINFO [0m:      	                  (8, 0.4552),
+[92mINFO [0m:      	                  (9, 0.49474),
+[92mINFO [0m:      	                  (10, 0.5062),
+[92mINFO [0m:      	                  (11, 0.51322),
+[92mINFO [0m:      	                  (12, 0.54204),
+[92mINFO [0m:      	                  (13, 0.54978),
+[92mINFO [0m:      	                  (14, 0.56918),
+[92mINFO [0m:      	                  (15, 0.5854),
+[92mINFO [0m:      	                  (16, 0.57766),
+[92mINFO [0m:      	                  (17, 0.58664),
+[92mINFO [0m:      	                  (18, 0.51472),
+[92mINFO [0m:      	                  (19, 0.56608),
+[92mINFO [0m:      	                  (20, 0.58164)],
+[92mINFO [0m:      	 'val_loss': [(1, 22788.99209918976),
+[92mINFO [0m:      	              (2, 18519.715564228594),
+[92mINFO [0m:      	              (3, 17636.945003840327),
+[92mINFO [0m:      	              (4, 15913.454964519291),
+[92mINFO [0m:      	              (5, 16245.3290852502),
+[92mINFO [0m:      	              (6, 15824.81589576751),
+[92mINFO [0m:      	              (7, 15171.841923552749),
+[92mINFO [0m:      	              (8, 14748.456387888455),
+[92mINFO [0m:      	              (9, 13730.719361425332),
+[92mINFO [0m:      	              (10, 13435.010309593123),
+[92mINFO [0m:      	              (11, 13351.290724345623),
+[92mINFO [0m:      	              (12, 12628.671212493835),
+[92mINFO [0m:      	              (13, 12476.197542041768),
+[92mINFO [0m:      	              (14, 12098.451270629177),
+[92mINFO [0m:      	              (15, 11682.510869219863),
+[92mINFO [0m:      	              (16, 11891.917357625991),
+[92mINFO [0m:      	              (17, 11653.54919443943),
+[92mINFO [0m:      	              (18, 13423.543366715685),
+[92mINFO [0m:      	              (19, 12109.586547942541),
+[92mINFO [0m:      	              (20, 11754.87600298362)]}
+[92mINFO [0m:      
+[36m(ClientAppActor pid=779697)[0m [92mINFO [0m:      Starting training...[32m [repeated 4x across cluster][0m
+Files already downloaded and verified
+Files already downloaded and verified
+[36m(ClientAppActor pid=779690)[0m Files already downloaded and verified
+[36m(ClientAppActor pid=779695)[0m Files already downloaded and verified[32m [repeated 10x across cluster] (Ray deduplicates logs by default. Set RAY_DEDUP_LOGS=0 to disable log deduplication, or see https://docs.ray.io/en/master/ray-observability/ray-logging.html#log-deduplication for more options.)[0m
+[36m(ClientAppActor pid=779700)[0m Files already downloaded and verified[32m [repeated 10x across cluster][0m
+[36m(ClientAppActor pid=779703)[0m Files already downloaded and verified[32m [repeated 10x across cluster][0m
+[36m(ClientAppActor pid=779703)[0m Files already downloaded and verified
