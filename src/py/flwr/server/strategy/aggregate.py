@@ -16,12 +16,13 @@
 # mypy: disallow_untyped_calls=False
 
 from functools import reduce
-from logging import INFO
+from logging import INFO, ERROR
 from typing import Any, Callable, List, Tuple
 
 import numpy as np
 import random
 import copy
+import sys
 
 from flwr.common import FitRes, NDArray, NDArrays, parameters_to_ndarrays
 from flwr.common.logger import log
@@ -46,10 +47,33 @@ def aggregate(results: List[Tuple[NDArrays, int]]) -> NDArrays:
     ]
     return weights_prime
 
+mult_count = 0
+
+# Hokeun's new function
+def hokeun_perform_recursive_deep_multiplication(scaling_factor: float, params: np.ndarray, arrays: np.ndarray, noise_enabled: bool, gauss_noise_sigma: float):
+    if len(params) == 0:
+        log(ERROR, "Hokeun! hokeun_perform_recursive_deep_multiplication: len(params) is 0")
+        sys.exit(1)
+    if len(params) != len(arrays):
+        log(ERROR, "Hokeun! hokeun_perform_recursive_deep_multiplication: len(params) != len(array)")
+        sys.exit(1)
+
+    if isinstance(params[0], np.ndarray):
+        for i in range(len(params)):
+            hokeun_perform_recursive_deep_multiplication(scaling_factor, params[i], arrays[i], noise_enabled, gauss_noise_sigma)
+    if isinstance(params[0], np.float32):
+        for i in range(len(params)):
+            noise_factor = 1.0
+            if noise_enabled:
+                noise_factor += random.gauss(0, gauss_noise_sigma)
+            params[i] = params[i] + scaling_factor * arrays[i] * noise_factor
+            global mult_count
+            mult_count += 1
+
 
 def aggregate_inplace(results: List[Tuple[ClientProxy, FitRes]], noise_enabled: bool = False, gauss_noise_sigma: float = 0.0) -> NDArrays:
     """Compute in-place weighted average."""
-    log(INFO, 'Hokeun! aggregate_inplace: beginning')
+    log(INFO, "Hokeun! aggregate_inplace: beginning")
     # Count total examples
     num_examples_total = sum(fit_res.num_examples for (_, fit_res) in results)
 
@@ -78,14 +102,17 @@ def aggregate_inplace(results: List[Tuple[ClientProxy, FitRes]], noise_enabled: 
         log(INFO, "Hokeun! aggregate_inplace: len(params): %i", len(params))
         log(INFO, "Hokeun! aggregate_inplace: len(hokeun_params): %i", len(hokeun_params))
 
-        for j in range(len(ndarrays)):
-            # Element-wise add ndarrays[j] and params[j]
-            log(INFO, "Hokeun! aggregate_inplace: len(ndarrays[%i]): %i", j, len(ndarrays[j]))
-            log(INFO, "Hokeun! aggregate_inplace: len(params[%i]): %i", j, len(params[j]))
-            log(INFO, "Hokeun! aggregate_inplace: len(hokeun_params[%i]): %i", j, len(hokeun_params[j]))
-            for k in range(len(ndarrays[j])):
-                # log(INFO, "Hokeun! aggregate_inplace: len(ndarrays[%i][%i]): %i", j, k, len(ndarrays[j][k]))
-                hokeun_params[j][k] += scaling_factors[i + 1] * ndarrays[j][k] #* noise_factor
+        hokeun_perform_recursive_deep_multiplication(scaling_factors[i + 1], hokeun_params, ndarrays, noise_enabled, gauss_noise_sigma)
+
+        log(INFO, "Hokeun! aggregate_inplace: mult_count: %i", mult_count)
+        # for j in range(len(ndarrays)):
+        #     # Element-wise add ndarrays[j] and params[j]
+        #     log(INFO, "Hokeun! aggregate_inplace: len(ndarrays[%i]): %i", j, len(ndarrays[j]))
+        #     log(INFO, "Hokeun! aggregate_inplace: len(params[%i]): %i", j, len(params[j]))
+        #     log(INFO, "Hokeun! aggregate_inplace: len(hokeun_params[%i]): %i", j, len(hokeun_params[j]))
+        #     for k in range(len(ndarrays[j])):
+        #         # log(INFO, "Hokeun! aggregate_inplace: len(ndarrays[%i][%i]): %i", j, k, len(ndarrays[j][k]))
+        #         hokeun_params[j][k] += scaling_factors[i + 1] * ndarrays[j][k] #* noise_factor
 
 
         res = (
@@ -97,43 +124,43 @@ def aggregate_inplace(results: List[Tuple[ClientProxy, FitRes]], noise_enabled: 
         params = [reduce(np.add, layer_updates) for layer_updates in zip(params, res)]
 
 
-        log(INFO, "Hokeun! type(hokeun_params): %r", type(hokeun_params))
-        log(INFO, "Hokeun! type(params): %r", type(params))
+        # log(INFO, "Hokeun! type(hokeun_params): %r", type(hokeun_params))
+        # log(INFO, "Hokeun! type(params): %r", type(params))
 
-        log(INFO, "Hokeun! type(hokeun_params[0]): %r", type(hokeun_params[0]))
-        log(INFO, "Hokeun! type(params[0]): %r", type(params[0]))
+        # log(INFO, "Hokeun! type(hokeun_params[0]): %r", type(hokeun_params[0]))
+        # log(INFO, "Hokeun! type(params[0]): %r", type(params[0]))
 
-        log(INFO, "Hokeun! type(hokeun_params[0][0]): %r", type(hokeun_params[0][0]))
-        log(INFO, "Hokeun! type(params[0][0]): %r", type(params[0][0]))
+        # log(INFO, "Hokeun! type(hokeun_params[0][0]): %r", type(hokeun_params[0][0]))
+        # log(INFO, "Hokeun! type(params[0][0]): %r", type(params[0][0]))
 
-        log(INFO, "Hokeun! type(hokeun_params[0][0]): %r", str(hokeun_params[0][0]))
-        log(INFO, "Hokeun! type(params[0][0]): %r", str(params[0][0]))
+        # log(INFO, "Hokeun! type(hokeun_params[0][0]): %r", str(hokeun_params[0][0]))
+        # log(INFO, "Hokeun! type(params[0][0]): %r", str(params[0][0]))
 
-        log(INFO, "Hokeun! type(hokeun_params[0][0][0]): %r", type(hokeun_params[0][0][0]))
-        log(INFO, "Hokeun! type(params[0][0][0]): %r", type(params[0][0][0]))
+        # log(INFO, "Hokeun! type(hokeun_params[0][0][0]): %r", type(hokeun_params[0][0][0]))
+        # log(INFO, "Hokeun! type(params[0][0][0]): %r", type(params[0][0][0]))
 
-        log(INFO, "Hokeun! type(hokeun_params[0][0][0]): %r", str(hokeun_params[0][0][0]))
-        log(INFO, "Hokeun! type(params[0][0][0]): %r", str(params[0][0][0]))
+        # log(INFO, "Hokeun! type(hokeun_params[0][0][0]): %r", str(hokeun_params[0][0][0]))
+        # log(INFO, "Hokeun! type(params[0][0][0]): %r", str(params[0][0][0]))
 
-        log(INFO, "Hokeun! type(hokeun_params[0][0][0][0]): %r", type(hokeun_params[0][0][0][0]))
-        log(INFO, "Hokeun! type(params[0][0][0][0]): %r", type(params[0][0][0][0]))
+        # log(INFO, "Hokeun! type(hokeun_params[0][0][0][0]): %r", type(hokeun_params[0][0][0][0]))
+        # log(INFO, "Hokeun! type(params[0][0][0][0]): %r", type(params[0][0][0][0]))
 
-        # This type(params[0][0][0][0]) is: numpy.ndarray
-        log(INFO, "Hokeun! type(hokeun_params[0][0][0][0]): %r", str(hokeun_params[0][0][0][0]))
-        log(INFO, "Hokeun! type(params[0][0][0][0]): %r", str(params[0][0][0][0]))
+        # # This type(params[0][0][0][0]) is: numpy.ndarray
+        # log(INFO, "Hokeun! type(hokeun_params[0][0][0][0]): %r", str(hokeun_params[0][0][0][0]))
+        # log(INFO, "Hokeun! type(params[0][0][0][0]): %r", str(params[0][0][0][0]))
 
-        # This type(params[0][0][0][0][0]) is: numpy.float32
-        log(INFO, "Hokeun! type(hokeun_params[0][0][0][0][0]): %r", type(hokeun_params[0][0][0][0][0]))
-        log(INFO, "Hokeun! type(params[0][0][0][0][0]): %r", type(params[0][0][0][0][0]))
+        # # This type(params[0][0][0][0][0]) is: numpy.float32
+        # log(INFO, "Hokeun! type(hokeun_params[0][0][0][0][0]): %r", type(hokeun_params[0][0][0][0][0]))
+        # log(INFO, "Hokeun! type(params[0][0][0][0][0]): %r", type(params[0][0][0][0][0]))
 
-        log(INFO, "Hokeun! type(hokeun_params[0][0][0][0][0]): %r", str(hokeun_params[0][0][0][0][0]))
-        log(INFO, "Hokeun! type(params[0][0][0][0][0]): %r", str(params[0][0][0][0][0]))
+        # log(INFO, "Hokeun! type(hokeun_params[0][0][0][0][0]): %r", str(hokeun_params[0][0][0][0][0]))
+        # log(INFO, "Hokeun! type(params[0][0][0][0][0]): %r", str(params[0][0][0][0][0]))
 
         log(INFO, "Hokeun! are hokeun_params and params the same in string?: %r", str(hokeun_params) == str(params))
-        log(INFO, "Hokeun! are hokeun_params and params the same numerically?: %r", hokeun_params == params)
-
-        log(INFO, "Hokeun! are hokeun_params: %r", hokeun_params)
-        log(INFO, "Hokeun! are params: %r", params)
+        # log(INFO, "Hokeun! are hokeun_params and params the same numerically?: %r", hokeun_params == params)
+        
+        log(INFO, "Hokeun! aggregate_inplace: hokeun_params: %r", hokeun_params)
+        log(INFO, "Hokeun! aggregate_inplace: params: %r", params)
 
     return params
 
