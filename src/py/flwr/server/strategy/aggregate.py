@@ -157,15 +157,15 @@ def aggregate_inplace(results: List[Tuple[ClientProxy, FitRes]], noise_enabled: 
 
     hokeun_params = copy.deepcopy(params)
     for i, (_, fit_res) in enumerate(results[1:]):
-        noise_factor = 1.0
-        if noise_enabled:
-            noise_factor += random.gauss(0, gauss_noise_sigma)
-            log(INFO, "Hokeun! noise_factor: %f", noise_factor)
+        # noise_factor = 1.0
+        # if noise_enabled:
+        #     noise_factor += random.gauss(0, gauss_noise_sigma)
+        #     log(INFO, "Hokeun! noise_factor: %f", noise_factor)
 
         ndarrays = parameters_to_ndarrays(fit_res.parameters)
-        log(INFO, "Hokeun! aggregate_inplace: len(ndarrays): %i", len(ndarrays))
-        log(INFO, "Hokeun! aggregate_inplace: len(params): %i", len(params))
-        log(INFO, "Hokeun! aggregate_inplace: len(hokeun_params): %i", len(hokeun_params))
+        # log(INFO, "Hokeun! aggregate_inplace: len(ndarrays): %i", len(ndarrays))
+        # log(INFO, "Hokeun! aggregate_inplace: len(params): %i", len(params))
+        # log(INFO, "Hokeun! aggregate_inplace: len(hokeun_params): %i", len(hokeun_params))
 
         hokeun_perform_recursive_deep_multiplication(scaling_factors[i + 1], hokeun_params, ndarrays, noise_enabled, gauss_noise_sigma)
 
@@ -221,7 +221,7 @@ def aggregate_inplace(results: List[Tuple[ClientProxy, FitRes]], noise_enabled: 
         # log(INFO, "Hokeun! type(hokeun_params[0][0][0][0][0]): %r", str(hokeun_params[0][0][0][0][0]))
         # log(INFO, "Hokeun! type(params[0][0][0][0][0]): %r", str(params[0][0][0][0][0]))
 
-        log(INFO, "Hokeun! are hokeun_params and params the same in string?: %r", str(hokeun_params) == str(params))
+        # log(INFO, "Hokeun! are hokeun_params and params the same in string?: %r", str(hokeun_params) == str(params))
         # log(INFO, "Hokeun! are hokeun_params and params the same numerically?: %r", hokeun_params == params)
         
         log(INFO, "Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): %i", hokeun_deep_count_float32(hokeun_params))
@@ -233,7 +233,7 @@ def aggregate_inplace(results: List[Tuple[ClientProxy, FitRes]], noise_enabled: 
 
     log(INFO, "Hokeun! aggregate_inplace: Final results: hokeun_deep_count_float32(hokeun_params): %i", hokeun_deep_count_float32(hokeun_params))
     log(INFO, "Hokeun! aggregate_inplace: Final results: hokeun_deep_count_float32(params): %i", hokeun_deep_count_float32(params))
-    log(INFO, "Hokeun! aggregate_inplace: Final results: calling hokeun_deep_diff_float32() ...")
+    # log(INFO, "Hokeun! aggregate_inplace: Final results: calling hokeun_deep_diff_float32() ...")
 
     print_diff = False
     log(INFO, "Hokeun! aggregate_inplace: Final results: hokeun_deep_diff_float32(hokeun_params, params): %i",
