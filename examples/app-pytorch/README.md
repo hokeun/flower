@@ -99,4 +99,4 @@ poetry shell
 exit
 ```
 
-After starting the script background using `%`, you can first `exit` and check if the script still runs.
+After starting the script background using `%`, you can first `exit` to exit from poetry and check if the script still runs.
