@@ -23,6 +23,7 @@ import numpy as np
 import random
 import copy
 import sys
+import math
 
 from flwr.common import FitRes, NDArray, NDArrays, parameters_to_ndarrays
 from flwr.common.logger import log
@@ -61,6 +62,47 @@ def hokeun_deep_count_float32(arrays: np.ndarray):
         return len(arrays)
     else:
         log(ERROR, "Hokeun! hokeun_deep_count_float32: wrong type array element! %r", type(arrays[0]))
+        sys.exit(1)
+
+
+def hokeun_deep_diff_float32(array1: np.ndarray, array2: np.ndarray, indices: List[int]):
+    if len(array1) == 0:
+        log(ERROR, "Hokeun! hokeun_deep_diff_float32: len(array1) is 0")
+        sys.exit(1)
+    if len(array2) == 0:
+        log(ERROR, "Hokeun! hokeun_deep_diff_float32: len(array2) is 0")
+        sys.exit(1)
+    if len(array1) != len(array2):
+        log(ERROR, "Hokeun! hokeun_deep_diff_float32: len(array1) != len(array2)")
+        sys.exit(1)
+    if type(array1) != type(array2):
+        log(ERROR, "Hokeun! hokeun_deep_diff_float32: type(array1) != type(array2)")
+        sys.exit(1)
+
+    if isinstance(array1[0], np.ndarray):
+        diff_count = 0
+        for i in range(len(array1)):
+            copy_of_indices = indices.copy()
+            copy_of_indices.append(i)
+            diff_count += hokeun_deep_diff_float32(array1[i], array2[i], copy_of_indices)
+        return diff_count
+    elif isinstance(array1[0], np.float32):
+        diff_count = 0
+        for i in range(len(array1)):
+            # if array1[i] != array2[i]:
+            # Proper comparison of floating point numbers
+            # Default rel_tol=1e-09
+            if not math.isclose(array1[i], array2[i], rel_tol=1e-06):
+                diff_count += 1
+                copy_of_indices = indices.copy()
+                copy_of_indices.append(i)
+                # Using .astype(str) to print with full precision.
+                log(INFO, "Hokeun! hokeun_deep_diff_float32: Found diff at %r, val1: %s, val2: %s, difference: %s",
+                    copy_of_indices, array1[i].astype(str), array2[i].astype(str), (array1[i] - array2[i]).astype(str))
+        return diff_count
+
+    else:
+        log(ERROR, "Hokeun! hokeun_deep_count_float32: wrong type array element! %r", type(array1[0]))
         sys.exit(1)
 
 
@@ -183,8 +225,14 @@ def aggregate_inplace(results: List[Tuple[ClientProxy, FitRes]], noise_enabled: 
         log(INFO, "Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): %i", hokeun_deep_count_float32(hokeun_params))
         log(INFO, "Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): %i", hokeun_deep_count_float32(params))
 
-        log(INFO, "Hokeun! aggregate_inplace: hokeun_params: %r", hokeun_params)
-        log(INFO, "Hokeun! aggregate_inplace: params: %r", params)
+        # The following lines print out raw data.
+        # log(INFO, "Hokeun! aggregate_inplace: hokeun_params: %r", hokeun_params)
+        # log(INFO, "Hokeun! aggregate_inplace: params: %r", params)
+
+    log(INFO, "Hokeun! aggregate_inplace: Final results: hokeun_deep_count_float32(hokeun_params): %i", hokeun_deep_count_float32(hokeun_params))
+    log(INFO, "Hokeun! aggregate_inplace: Final results: hokeun_deep_count_float32(params): %i", hokeun_deep_count_float32(params))
+    log(INFO, "Hokeun! aggregate_inplace: Final results: calling hokeun_deep_diff_float32() ...")
+    log(INFO, "Hokeun! aggregate_inplace: Final results: hokeun_deep_diff_float32(hokeun_params, params): %i", hokeun_deep_diff_float32(hokeun_params, params, []))
 
     return params
 
