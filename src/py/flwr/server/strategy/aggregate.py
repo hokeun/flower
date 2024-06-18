@@ -47,9 +47,26 @@ def aggregate(results: List[Tuple[NDArrays, int]]) -> NDArrays:
     ]
     return weights_prime
 
-mult_count = 0
+# Count the number of float32 numbers in multi-dimensional array recursively.
+def hokeun_deep_count_float32(arrays: np.ndarray):
+    if len(arrays) == 0:
+        log(ERROR, "Hokeun! hokeun_deep_count_float32: len(arrays) is 0")
+        sys.exit(1)
+    if isinstance(arrays[0], np.ndarray):
+        sum = 0
+        for i in range(len(arrays)):
+            sum += hokeun_deep_count_float32(arrays[i])
+        return sum
+    elif isinstance(arrays[0], np.float32):
+        return len(arrays)
+    else:
+        log(ERROR, "Hokeun! hokeun_deep_count_float32: wrong type array element! %r", type(arrays[0]))
+        sys.exit(1)
 
-# Hokeun's new function
+
+
+mult_count = 0
+# Perform deep element-wise multiplication of float32 numbers in multi-dimensional array recursively.
 def hokeun_perform_recursive_deep_multiplication(scaling_factor: float, params: np.ndarray, arrays: np.ndarray, noise_enabled: bool, gauss_noise_sigma: float):
     if len(params) == 0:
         log(ERROR, "Hokeun! hokeun_perform_recursive_deep_multiplication: len(params) is 0")
@@ -61,7 +78,7 @@ def hokeun_perform_recursive_deep_multiplication(scaling_factor: float, params: 
     if isinstance(params[0], np.ndarray):
         for i in range(len(params)):
             hokeun_perform_recursive_deep_multiplication(scaling_factor, params[i], arrays[i], noise_enabled, gauss_noise_sigma)
-    if isinstance(params[0], np.float32):
+    elif isinstance(params[0], np.float32):
         for i in range(len(params)):
             noise_factor = 1.0
             if noise_enabled:
@@ -69,6 +86,10 @@ def hokeun_perform_recursive_deep_multiplication(scaling_factor: float, params: 
             params[i] = params[i] + scaling_factor * arrays[i] * noise_factor
             global mult_count
             mult_count += 1
+    else:
+        log(ERROR, "Hokeun! hokeun_perform_recursive_deep_multiplication: wrong type array element! %r", type(params[0]))
+        sys.exit(1)
+
 
 
 def aggregate_inplace(results: List[Tuple[ClientProxy, FitRes]], noise_enabled: bool = False, gauss_noise_sigma: float = 0.0) -> NDArrays:
@@ -159,6 +180,9 @@ def aggregate_inplace(results: List[Tuple[ClientProxy, FitRes]], noise_enabled: 
         log(INFO, "Hokeun! are hokeun_params and params the same in string?: %r", str(hokeun_params) == str(params))
         # log(INFO, "Hokeun! are hokeun_params and params the same numerically?: %r", hokeun_params == params)
         
+        log(INFO, "Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): %i", hokeun_deep_count_float32(hokeun_params))
+        log(INFO, "Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): %i", hokeun_deep_count_float32(params))
+
         log(INFO, "Hokeun! aggregate_inplace: hokeun_params: %r", hokeun_params)
         log(INFO, "Hokeun! aggregate_inplace: params: %r", params)
 
