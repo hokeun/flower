@@ -96,4 +96,7 @@ IMPORTANT! You must run `poetry shell` before running the shell script. For exam
 ```bash
 poetry shell
 ./run_experiments.sh &
+exit
 ```
+
+After starting the script background using `%`, you can first `exit` and check if the script still runs.
