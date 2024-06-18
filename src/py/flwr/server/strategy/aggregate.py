@@ -21,6 +21,7 @@ from typing import Any, Callable, List, Tuple
 
 import numpy as np
 import random
+import copy
 
 from flwr.common import FitRes, NDArray, NDArrays, parameters_to_ndarrays
 from flwr.common.logger import log
@@ -64,6 +65,8 @@ def aggregate_inplace(results: List[Tuple[ClientProxy, FitRes]], noise_enabled: 
     ]
     log(INFO, "Hokeun! aggregate_inplace: noise_enabled: %r", noise_enabled)
     log(INFO, "Hokeun! aggregate_inplace: gauss_noise_sigma: %r", gauss_noise_sigma)
+
+    hokeun_params = copy.deepcopy(params)
     for i, (_, fit_res) in enumerate(results[1:]):
         noise_factor = 1.0
         if noise_enabled:
@@ -72,13 +75,65 @@ def aggregate_inplace(results: List[Tuple[ClientProxy, FitRes]], noise_enabled: 
 
         ndarrays = parameters_to_ndarrays(fit_res.parameters)
         log(INFO, "Hokeun! aggregate_inplace: len(ndarrays): %i", len(ndarrays))
+        log(INFO, "Hokeun! aggregate_inplace: len(params): %i", len(params))
+        log(INFO, "Hokeun! aggregate_inplace: len(hokeun_params): %i", len(hokeun_params))
+
+        for j in range(len(ndarrays)):
+            # Element-wise add ndarrays[j] and params[j]
+            log(INFO, "Hokeun! aggregate_inplace: len(ndarrays[%i]): %i", j, len(ndarrays[j]))
+            log(INFO, "Hokeun! aggregate_inplace: len(params[%i]): %i", j, len(params[j]))
+            log(INFO, "Hokeun! aggregate_inplace: len(hokeun_params[%i]): %i", j, len(hokeun_params[j]))
+            for k in range(len(ndarrays[j])):
+                # log(INFO, "Hokeun! aggregate_inplace: len(ndarrays[%i][%i]): %i", j, k, len(ndarrays[j][k]))
+                hokeun_params[j][k] += scaling_factors[i + 1] * ndarrays[j][k] #* noise_factor
+
+
         res = (
-            scaling_factors[i + 1] * x * noise_factor
+            scaling_factors[i + 1] * x # * noise_factor
             # Giving 10% error.
             # scaling_factors[i + 1] * x * 1.1 
             for x in ndarrays
         )
         params = [reduce(np.add, layer_updates) for layer_updates in zip(params, res)]
+
+
+        log(INFO, "Hokeun! type(hokeun_params): %r", type(hokeun_params))
+        log(INFO, "Hokeun! type(params): %r", type(params))
+
+        log(INFO, "Hokeun! type(hokeun_params[0]): %r", type(hokeun_params[0]))
+        log(INFO, "Hokeun! type(params[0]): %r", type(params[0]))
+
+        log(INFO, "Hokeun! type(hokeun_params[0][0]): %r", type(hokeun_params[0][0]))
+        log(INFO, "Hokeun! type(params[0][0]): %r", type(params[0][0]))
+
+        log(INFO, "Hokeun! type(hokeun_params[0][0]): %r", str(hokeun_params[0][0]))
+        log(INFO, "Hokeun! type(params[0][0]): %r", str(params[0][0]))
+
+        log(INFO, "Hokeun! type(hokeun_params[0][0][0]): %r", type(hokeun_params[0][0][0]))
+        log(INFO, "Hokeun! type(params[0][0][0]): %r", type(params[0][0][0]))
+
+        log(INFO, "Hokeun! type(hokeun_params[0][0][0]): %r", str(hokeun_params[0][0][0]))
+        log(INFO, "Hokeun! type(params[0][0][0]): %r", str(params[0][0][0]))
+
+        log(INFO, "Hokeun! type(hokeun_params[0][0][0][0]): %r", type(hokeun_params[0][0][0][0]))
+        log(INFO, "Hokeun! type(params[0][0][0][0]): %r", type(params[0][0][0][0]))
+
+        # This type(params[0][0][0][0]) is: numpy.ndarray
+        log(INFO, "Hokeun! type(hokeun_params[0][0][0][0]): %r", str(hokeun_params[0][0][0][0]))
+        log(INFO, "Hokeun! type(params[0][0][0][0]): %r", str(params[0][0][0][0]))
+
+        # This type(params[0][0][0][0][0]) is: numpy.float32
+        log(INFO, "Hokeun! type(hokeun_params[0][0][0][0][0]): %r", type(hokeun_params[0][0][0][0][0]))
+        log(INFO, "Hokeun! type(params[0][0][0][0][0]): %r", type(params[0][0][0][0][0]))
+
+        log(INFO, "Hokeun! type(hokeun_params[0][0][0][0][0]): %r", str(hokeun_params[0][0][0][0][0]))
+        log(INFO, "Hokeun! type(params[0][0][0][0][0]): %r", str(params[0][0][0][0][0]))
+
+        log(INFO, "Hokeun! are hokeun_params and params the same in string?: %r", str(hokeun_params) == str(params))
+        log(INFO, "Hokeun! are hokeun_params and params the same numerically?: %r", hokeun_params == params)
+
+        log(INFO, "Hokeun! are hokeun_params: %r", hokeun_params)
+        log(INFO, "Hokeun! are params: %r", params)
 
     return params
 
