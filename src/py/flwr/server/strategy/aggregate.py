@@ -65,7 +65,7 @@ def hokeun_deep_count_float32(arrays: np.ndarray):
         sys.exit(1)
 
 
-def hokeun_deep_diff_float32(array1: np.ndarray, array2: np.ndarray, indices: List[int]):
+def hokeun_deep_diff_float32(array1: np.ndarray, array2: np.ndarray, indices: List[int], print_diff: bool):
     if len(array1) == 0:
         log(ERROR, "Hokeun! hokeun_deep_diff_float32: len(array1) is 0")
         sys.exit(1)
@@ -84,7 +84,7 @@ def hokeun_deep_diff_float32(array1: np.ndarray, array2: np.ndarray, indices: Li
         for i in range(len(array1)):
             copy_of_indices = indices.copy()
             copy_of_indices.append(i)
-            diff_count += hokeun_deep_diff_float32(array1[i], array2[i], copy_of_indices)
+            diff_count += hokeun_deep_diff_float32(array1[i], array2[i], copy_of_indices, print_diff)
         return diff_count
     elif isinstance(array1[0], np.float32):
         diff_count = 0
@@ -96,9 +96,11 @@ def hokeun_deep_diff_float32(array1: np.ndarray, array2: np.ndarray, indices: Li
                 diff_count += 1
                 copy_of_indices = indices.copy()
                 copy_of_indices.append(i)
-                # Using .astype(str) to print with full precision.
-                log(INFO, "Hokeun! hokeun_deep_diff_float32: Found diff at %r, val1: %s, val2: %s, difference: %s",
-                    copy_of_indices, array1[i].astype(str), array2[i].astype(str), (array1[i] - array2[i]).astype(str))
+                if print_diff:
+                    # Print each diff.
+                    # Using .astype(str) to print with full precision.
+                    log(INFO, "Hokeun! hokeun_deep_diff_float32: Found diff at %r, val1: %s, val2: %s, difference: %s",
+                        copy_of_indices, array1[i].astype(str), array2[i].astype(str), (array1[i] - array2[i]).astype(str))
         return diff_count
 
     else:
@@ -232,7 +234,10 @@ def aggregate_inplace(results: List[Tuple[ClientProxy, FitRes]], noise_enabled: 
     log(INFO, "Hokeun! aggregate_inplace: Final results: hokeun_deep_count_float32(hokeun_params): %i", hokeun_deep_count_float32(hokeun_params))
     log(INFO, "Hokeun! aggregate_inplace: Final results: hokeun_deep_count_float32(params): %i", hokeun_deep_count_float32(params))
     log(INFO, "Hokeun! aggregate_inplace: Final results: calling hokeun_deep_diff_float32() ...")
-    log(INFO, "Hokeun! aggregate_inplace: Final results: hokeun_deep_diff_float32(hokeun_params, params): %i", hokeun_deep_diff_float32(hokeun_params, params, []))
+
+    print_diff = False
+    log(INFO, "Hokeun! aggregate_inplace: Final results: hokeun_deep_diff_float32(hokeun_params, params): %i",
+        hokeun_deep_diff_float32(hokeun_params, params, [], print_diff))
 
     return params
 
