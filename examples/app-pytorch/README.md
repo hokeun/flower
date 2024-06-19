@@ -74,7 +74,7 @@ Or, to try the custom server function example, run:
 flower-server-app server_custom:app --insecure
 ```
 
-## More customized commands for WPES paper expierments
+## More customized commands for WPES paper experiments
 ``bash
 HOKEUN_FLWR_NUM_ROUNDS=7 bash -c 'flower-simulation --server-app server:app --client-app client:app --num-supernodes 2'
 ```
@@ -100,3 +100,15 @@ exit
 ```
 
 After starting the script background using `%`, you can first `exit` to exit from poetry and check if the script still runs.
+
+## Killing experiments script running in the background
+
+Check out this page: [Killing a shell script running in background](https://unix.stackexchange.com/questions/174028/killing-a-shell-script-running-in-background).
+
+Find the process ID of the script like this:
+
+```
+ps -aux | grep run_experiments*
+```
+
+Then, kill the process.
