@@ -1,0 +1,1471 @@
+[92mINFO [0m:      Hokeun! env_var_num_rounds: 50
+[92mINFO [0m:      Hokeun! env_var_noise_enabled: True
+[92mINFO [0m:      Hokeun! env_var_gauss_noise_sigma: 0.1
+[92mINFO [0m:      Starting Flower ServerApp, config: num_rounds=50, no round_timeout
+[92mINFO [0m:      
+[92mINFO [0m:      Hokeun! [INIT]
+[92mINFO [0m:      Using initial global parameters provided by strategy
+[92mINFO [0m:      Evaluating initial global parameters
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 1]
+[92mINFO [0m:      configure_fit: strategy sampled 5 clients (out of 5)
+[36m(ClientAppActor pid=543718)[0m [92mINFO [0m:      Starting training...
+[92mINFO [0m:      aggregate_fit: received 5 results and 0 failures
+[92mINFO [0m:      Hokeun! aggregate_fit: self.inplace
+[92mINFO [0m:      Hokeun! aggregate_inplace: beginning
+[92mINFO [0m:      Hokeun! aggregate_inplace: noise_enabled: True
+[92mINFO [0m:      Hokeun! aggregate_inplace: gauss_noise_sigma: 0.1
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 124012
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 186018
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 248024
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_diff_float32(hokeun_params, params): 62003
+[92mINFO [0m:      configure_evaluate: no clients selected, skipping evaluation
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 2]
+[92mINFO [0m:      configure_fit: strategy sampled 5 clients (out of 5)
+[36m(ClientAppActor pid=543722)[0m [92mINFO [0m:      Starting training...[32m [repeated 5x across cluster][0m
+[92mINFO [0m:      aggregate_fit: received 5 results and 0 failures
+[92mINFO [0m:      Hokeun! aggregate_fit: self.inplace
+[92mINFO [0m:      Hokeun! aggregate_inplace: beginning
+[92mINFO [0m:      Hokeun! aggregate_inplace: noise_enabled: True
+[92mINFO [0m:      Hokeun! aggregate_inplace: gauss_noise_sigma: 0.1
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 310030
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 372036
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 434042
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 496048
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_diff_float32(hokeun_params, params): 62003
+[92mINFO [0m:      configure_evaluate: no clients selected, skipping evaluation
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 3]
+[92mINFO [0m:      configure_fit: strategy sampled 5 clients (out of 5)
+[36m(ClientAppActor pid=543730)[0m [92mINFO [0m:      Starting training...[32m [repeated 5x across cluster][0m
+[92mINFO [0m:      aggregate_fit: received 5 results and 0 failures
+[92mINFO [0m:      Hokeun! aggregate_fit: self.inplace
+[92mINFO [0m:      Hokeun! aggregate_inplace: beginning
+[92mINFO [0m:      Hokeun! aggregate_inplace: noise_enabled: True
+[92mINFO [0m:      Hokeun! aggregate_inplace: gauss_noise_sigma: 0.1
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 558054
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 620060
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 682066
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 744072
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_diff_float32(hokeun_params, params): 62005
+[92mINFO [0m:      configure_evaluate: no clients selected, skipping evaluation
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 4]
+[92mINFO [0m:      configure_fit: strategy sampled 5 clients (out of 5)
+[36m(ClientAppActor pid=543718)[0m [92mINFO [0m:      Starting training...[32m [repeated 5x across cluster][0m
+[92mINFO [0m:      aggregate_fit: received 5 results and 0 failures
+[92mINFO [0m:      Hokeun! aggregate_fit: self.inplace
+[92mINFO [0m:      Hokeun! aggregate_inplace: beginning
+[92mINFO [0m:      Hokeun! aggregate_inplace: noise_enabled: True
+[92mINFO [0m:      Hokeun! aggregate_inplace: gauss_noise_sigma: 0.1
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 806078
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 868084
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 930090
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 992096
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_diff_float32(hokeun_params, params): 62004
+[92mINFO [0m:      configure_evaluate: no clients selected, skipping evaluation
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 5]
+[92mINFO [0m:      configure_fit: strategy sampled 5 clients (out of 5)
+[36m(ClientAppActor pid=543722)[0m [92mINFO [0m:      Starting training...[32m [repeated 5x across cluster][0m
+[92mINFO [0m:      aggregate_fit: received 5 results and 0 failures
+[92mINFO [0m:      Hokeun! aggregate_fit: self.inplace
+[92mINFO [0m:      Hokeun! aggregate_inplace: beginning
+[92mINFO [0m:      Hokeun! aggregate_inplace: noise_enabled: True
+[92mINFO [0m:      Hokeun! aggregate_inplace: gauss_noise_sigma: 0.1
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 1054102
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 1116108
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 1178114
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 1240120
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_diff_float32(hokeun_params, params): 62005
+[92mINFO [0m:      configure_evaluate: no clients selected, skipping evaluation
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 6]
+[92mINFO [0m:      configure_fit: strategy sampled 5 clients (out of 5)
+[36m(ClientAppActor pid=543729)[0m [92mINFO [0m:      Starting training...[32m [repeated 5x across cluster][0m
+[92mINFO [0m:      aggregate_fit: received 5 results and 0 failures
+[92mINFO [0m:      Hokeun! aggregate_fit: self.inplace
+[92mINFO [0m:      Hokeun! aggregate_inplace: beginning
+[92mINFO [0m:      Hokeun! aggregate_inplace: noise_enabled: True
+[92mINFO [0m:      Hokeun! aggregate_inplace: gauss_noise_sigma: 0.1
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 1302126
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 1364132
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 1426138
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 1488144
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_diff_float32(hokeun_params, params): 62003
+[92mINFO [0m:      configure_evaluate: no clients selected, skipping evaluation
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 7]
+[92mINFO [0m:      configure_fit: strategy sampled 5 clients (out of 5)
+[36m(ClientAppActor pid=543718)[0m [92mINFO [0m:      Starting training...[32m [repeated 5x across cluster][0m
+[92mINFO [0m:      aggregate_fit: received 5 results and 0 failures
+[92mINFO [0m:      Hokeun! aggregate_fit: self.inplace
+[92mINFO [0m:      Hokeun! aggregate_inplace: beginning
+[92mINFO [0m:      Hokeun! aggregate_inplace: noise_enabled: True
+[92mINFO [0m:      Hokeun! aggregate_inplace: gauss_noise_sigma: 0.1
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 1550150
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 1612156
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 1674162
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 1736168
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_diff_float32(hokeun_params, params): 62005
+[92mINFO [0m:      configure_evaluate: no clients selected, skipping evaluation
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 8]
+[92mINFO [0m:      configure_fit: strategy sampled 5 clients (out of 5)
+[36m(ClientAppActor pid=543716)[0m [92mINFO [0m:      Starting training...[32m [repeated 5x across cluster][0m
+[92mINFO [0m:      aggregate_fit: received 5 results and 0 failures
+[92mINFO [0m:      Hokeun! aggregate_fit: self.inplace
+[92mINFO [0m:      Hokeun! aggregate_inplace: beginning
+[92mINFO [0m:      Hokeun! aggregate_inplace: noise_enabled: True
+[92mINFO [0m:      Hokeun! aggregate_inplace: gauss_noise_sigma: 0.1
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 1798174
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 1860180
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 1922186
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 1984192
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_diff_float32(hokeun_params, params): 62004
+[92mINFO [0m:      configure_evaluate: no clients selected, skipping evaluation
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 9]
+[92mINFO [0m:      configure_fit: strategy sampled 5 clients (out of 5)
+[36m(ClientAppActor pid=543722)[0m [92mINFO [0m:      Starting training...[32m [repeated 5x across cluster][0m
+[92mINFO [0m:      aggregate_fit: received 5 results and 0 failures
+[92mINFO [0m:      Hokeun! aggregate_fit: self.inplace
+[92mINFO [0m:      Hokeun! aggregate_inplace: beginning
+[92mINFO [0m:      Hokeun! aggregate_inplace: noise_enabled: True
+[92mINFO [0m:      Hokeun! aggregate_inplace: gauss_noise_sigma: 0.1
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 2046198
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 2108204
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 2170210
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 2232216
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_diff_float32(hokeun_params, params): 62006
+[92mINFO [0m:      configure_evaluate: no clients selected, skipping evaluation
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 10]
+[92mINFO [0m:      configure_fit: strategy sampled 5 clients (out of 5)
+[36m(ClientAppActor pid=543718)[0m [92mINFO [0m:      Starting training...[32m [repeated 5x across cluster][0m
+[92mINFO [0m:      aggregate_fit: received 5 results and 0 failures
+[92mINFO [0m:      Hokeun! aggregate_fit: self.inplace
+[92mINFO [0m:      Hokeun! aggregate_inplace: beginning
+[92mINFO [0m:      Hokeun! aggregate_inplace: noise_enabled: True
+[92mINFO [0m:      Hokeun! aggregate_inplace: gauss_noise_sigma: 0.1
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 2294222
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 2356228
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 2418234
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 2480240
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_diff_float32(hokeun_params, params): 62005
+[92mINFO [0m:      configure_evaluate: no clients selected, skipping evaluation
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 11]
+[92mINFO [0m:      configure_fit: strategy sampled 5 clients (out of 5)
+[36m(ClientAppActor pid=543723)[0m [92mINFO [0m:      Starting training...[32m [repeated 5x across cluster][0m
+[92mINFO [0m:      aggregate_fit: received 5 results and 0 failures
+[92mINFO [0m:      Hokeun! aggregate_fit: self.inplace
+[92mINFO [0m:      Hokeun! aggregate_inplace: beginning
+[92mINFO [0m:      Hokeun! aggregate_inplace: noise_enabled: True
+[92mINFO [0m:      Hokeun! aggregate_inplace: gauss_noise_sigma: 0.1
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 2542246
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 2604252
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 2666258
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 2728264
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_diff_float32(hokeun_params, params): 62004
+[92mINFO [0m:      configure_evaluate: no clients selected, skipping evaluation
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 12]
+[92mINFO [0m:      configure_fit: strategy sampled 5 clients (out of 5)
+[36m(ClientAppActor pid=543722)[0m [92mINFO [0m:      Starting training...[32m [repeated 5x across cluster][0m
+[92mINFO [0m:      aggregate_fit: received 5 results and 0 failures
+[92mINFO [0m:      Hokeun! aggregate_fit: self.inplace
+[92mINFO [0m:      Hokeun! aggregate_inplace: beginning
+[92mINFO [0m:      Hokeun! aggregate_inplace: noise_enabled: True
+[92mINFO [0m:      Hokeun! aggregate_inplace: gauss_noise_sigma: 0.1
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 2790270
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 2852276
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 2914282
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 2976288
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_diff_float32(hokeun_params, params): 62005
+[92mINFO [0m:      configure_evaluate: no clients selected, skipping evaluation
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 13]
+[92mINFO [0m:      configure_fit: strategy sampled 5 clients (out of 5)
+[36m(ClientAppActor pid=543719)[0m [92mINFO [0m:      Starting training...[32m [repeated 5x across cluster][0m
+[92mINFO [0m:      aggregate_fit: received 5 results and 0 failures
+[92mINFO [0m:      Hokeun! aggregate_fit: self.inplace
+[92mINFO [0m:      Hokeun! aggregate_inplace: beginning
+[92mINFO [0m:      Hokeun! aggregate_inplace: noise_enabled: True
+[92mINFO [0m:      Hokeun! aggregate_inplace: gauss_noise_sigma: 0.1
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 3038294
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 3100300
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 3162306
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 3224312
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_diff_float32(hokeun_params, params): 62002
+[92mINFO [0m:      configure_evaluate: no clients selected, skipping evaluation
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 14]
+[92mINFO [0m:      configure_fit: strategy sampled 5 clients (out of 5)
+[36m(ClientAppActor pid=543717)[0m [92mINFO [0m:      Starting training...[32m [repeated 5x across cluster][0m
+[92mINFO [0m:      aggregate_fit: received 5 results and 0 failures
+[92mINFO [0m:      Hokeun! aggregate_fit: self.inplace
+[92mINFO [0m:      Hokeun! aggregate_inplace: beginning
+[92mINFO [0m:      Hokeun! aggregate_inplace: noise_enabled: True
+[92mINFO [0m:      Hokeun! aggregate_inplace: gauss_noise_sigma: 0.1
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 3286318
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 3348324
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 3410330
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 3472336
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_diff_float32(hokeun_params, params): 62006
+[92mINFO [0m:      configure_evaluate: no clients selected, skipping evaluation
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 15]
+[92mINFO [0m:      configure_fit: strategy sampled 5 clients (out of 5)
+[36m(ClientAppActor pid=543722)[0m [92mINFO [0m:      Starting training...[32m [repeated 5x across cluster][0m
+[92mINFO [0m:      aggregate_fit: received 5 results and 0 failures
+[92mINFO [0m:      Hokeun! aggregate_fit: self.inplace
+[92mINFO [0m:      Hokeun! aggregate_inplace: beginning
+[92mINFO [0m:      Hokeun! aggregate_inplace: noise_enabled: True
+[92mINFO [0m:      Hokeun! aggregate_inplace: gauss_noise_sigma: 0.1
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 3534342
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 3596348
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 3658354
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 3720360
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_diff_float32(hokeun_params, params): 62005
+[92mINFO [0m:      configure_evaluate: no clients selected, skipping evaluation
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 16]
+[92mINFO [0m:      configure_fit: strategy sampled 5 clients (out of 5)
+[36m(ClientAppActor pid=543718)[0m [92mINFO [0m:      Starting training...[32m [repeated 5x across cluster][0m
+[92mINFO [0m:      aggregate_fit: received 5 results and 0 failures
+[92mINFO [0m:      Hokeun! aggregate_fit: self.inplace
+[92mINFO [0m:      Hokeun! aggregate_inplace: beginning
+[92mINFO [0m:      Hokeun! aggregate_inplace: noise_enabled: True
+[92mINFO [0m:      Hokeun! aggregate_inplace: gauss_noise_sigma: 0.1
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 3782366
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 3844372
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 3906378
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 3968384
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_diff_float32(hokeun_params, params): 62005
+[92mINFO [0m:      configure_evaluate: no clients selected, skipping evaluation
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 17]
+[92mINFO [0m:      configure_fit: strategy sampled 5 clients (out of 5)
+[36m(ClientAppActor pid=543717)[0m [92mINFO [0m:      Starting training...[32m [repeated 5x across cluster][0m
+[92mINFO [0m:      aggregate_fit: received 5 results and 0 failures
+[92mINFO [0m:      Hokeun! aggregate_fit: self.inplace
+[92mINFO [0m:      Hokeun! aggregate_inplace: beginning
+[92mINFO [0m:      Hokeun! aggregate_inplace: noise_enabled: True
+[92mINFO [0m:      Hokeun! aggregate_inplace: gauss_noise_sigma: 0.1
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 4030390
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 4092396
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 4154402
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 4216408
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_diff_float32(hokeun_params, params): 62005
+[92mINFO [0m:      configure_evaluate: no clients selected, skipping evaluation
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 18]
+[92mINFO [0m:      configure_fit: strategy sampled 5 clients (out of 5)
+[36m(ClientAppActor pid=543722)[0m [92mINFO [0m:      Starting training...[32m [repeated 5x across cluster][0m
+[92mINFO [0m:      aggregate_fit: received 5 results and 0 failures
+[92mINFO [0m:      Hokeun! aggregate_fit: self.inplace
+[92mINFO [0m:      Hokeun! aggregate_inplace: beginning
+[92mINFO [0m:      Hokeun! aggregate_inplace: noise_enabled: True
+[92mINFO [0m:      Hokeun! aggregate_inplace: gauss_noise_sigma: 0.1
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 4278414
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 4340420
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 4402426
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 4464432
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_diff_float32(hokeun_params, params): 62006
+[92mINFO [0m:      configure_evaluate: no clients selected, skipping evaluation
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 19]
+[92mINFO [0m:      configure_fit: strategy sampled 5 clients (out of 5)
+[36m(ClientAppActor pid=543723)[0m [92mINFO [0m:      Starting training...[32m [repeated 5x across cluster][0m
+[92mINFO [0m:      aggregate_fit: received 5 results and 0 failures
+[92mINFO [0m:      Hokeun! aggregate_fit: self.inplace
+[92mINFO [0m:      Hokeun! aggregate_inplace: beginning
+[92mINFO [0m:      Hokeun! aggregate_inplace: noise_enabled: True
+[92mINFO [0m:      Hokeun! aggregate_inplace: gauss_noise_sigma: 0.1
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 4526438
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 4588444
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 4650450
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 4712456
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_diff_float32(hokeun_params, params): 62005
+[92mINFO [0m:      configure_evaluate: no clients selected, skipping evaluation
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 20]
+[92mINFO [0m:      configure_fit: strategy sampled 5 clients (out of 5)
+[36m(ClientAppActor pid=543718)[0m [92mINFO [0m:      Starting training...[32m [repeated 5x across cluster][0m
+[92mINFO [0m:      aggregate_fit: received 5 results and 0 failures
+[92mINFO [0m:      Hokeun! aggregate_fit: self.inplace
+[92mINFO [0m:      Hokeun! aggregate_inplace: beginning
+[92mINFO [0m:      Hokeun! aggregate_inplace: noise_enabled: True
+[92mINFO [0m:      Hokeun! aggregate_inplace: gauss_noise_sigma: 0.1
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 4774462
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 4836468
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 4898474
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 4960480
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_diff_float32(hokeun_params, params): 62005
+[92mINFO [0m:      configure_evaluate: no clients selected, skipping evaluation
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 21]
+[92mINFO [0m:      configure_fit: strategy sampled 5 clients (out of 5)
+[36m(ClientAppActor pid=543722)[0m [92mINFO [0m:      Starting training...[32m [repeated 5x across cluster][0m
+[92mINFO [0m:      aggregate_fit: received 5 results and 0 failures
+[92mINFO [0m:      Hokeun! aggregate_fit: self.inplace
+[92mINFO [0m:      Hokeun! aggregate_inplace: beginning
+[92mINFO [0m:      Hokeun! aggregate_inplace: noise_enabled: True
+[92mINFO [0m:      Hokeun! aggregate_inplace: gauss_noise_sigma: 0.1
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 5022486
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 5084492
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 5146498
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 5208504
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_diff_float32(hokeun_params, params): 62003
+[92mINFO [0m:      configure_evaluate: no clients selected, skipping evaluation
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 22]
+[92mINFO [0m:      configure_fit: strategy sampled 5 clients (out of 5)
+[36m(ClientAppActor pid=543716)[0m [92mINFO [0m:      Starting training...[32m [repeated 5x across cluster][0m
+[92mINFO [0m:      aggregate_fit: received 5 results and 0 failures
+[92mINFO [0m:      Hokeun! aggregate_fit: self.inplace
+[92mINFO [0m:      Hokeun! aggregate_inplace: beginning
+[92mINFO [0m:      Hokeun! aggregate_inplace: noise_enabled: True
+[92mINFO [0m:      Hokeun! aggregate_inplace: gauss_noise_sigma: 0.1
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 5270510
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 5332516
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 5394522
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 5456528
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_diff_float32(hokeun_params, params): 62005
+[92mINFO [0m:      configure_evaluate: no clients selected, skipping evaluation
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 23]
+[92mINFO [0m:      configure_fit: strategy sampled 5 clients (out of 5)
+[36m(ClientAppActor pid=543718)[0m [92mINFO [0m:      Starting training...[32m [repeated 5x across cluster][0m
+[92mINFO [0m:      aggregate_fit: received 5 results and 0 failures
+[92mINFO [0m:      Hokeun! aggregate_fit: self.inplace
+[92mINFO [0m:      Hokeun! aggregate_inplace: beginning
+[92mINFO [0m:      Hokeun! aggregate_inplace: noise_enabled: True
+[92mINFO [0m:      Hokeun! aggregate_inplace: gauss_noise_sigma: 0.1
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 5518534
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 5580540
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 5642546
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 5704552
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_diff_float32(hokeun_params, params): 62006
+[92mINFO [0m:      configure_evaluate: no clients selected, skipping evaluation
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 24]
+[92mINFO [0m:      configure_fit: strategy sampled 5 clients (out of 5)
+[36m(ClientAppActor pid=543722)[0m [92mINFO [0m:      Starting training...[32m [repeated 5x across cluster][0m
+[92mINFO [0m:      aggregate_fit: received 5 results and 0 failures
+[92mINFO [0m:      Hokeun! aggregate_fit: self.inplace
+[92mINFO [0m:      Hokeun! aggregate_inplace: beginning
+[92mINFO [0m:      Hokeun! aggregate_inplace: noise_enabled: True
+[92mINFO [0m:      Hokeun! aggregate_inplace: gauss_noise_sigma: 0.1
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 5766558
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 5828564
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 5890570
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 5952576
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_diff_float32(hokeun_params, params): 62005
+[92mINFO [0m:      configure_evaluate: no clients selected, skipping evaluation
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 25]
+[92mINFO [0m:      configure_fit: strategy sampled 5 clients (out of 5)
+[36m(ClientAppActor pid=543716)[0m [92mINFO [0m:      Starting training...[32m [repeated 5x across cluster][0m
+[92mINFO [0m:      aggregate_fit: received 5 results and 0 failures
+[92mINFO [0m:      Hokeun! aggregate_fit: self.inplace
+[92mINFO [0m:      Hokeun! aggregate_inplace: beginning
+[92mINFO [0m:      Hokeun! aggregate_inplace: noise_enabled: True
+[92mINFO [0m:      Hokeun! aggregate_inplace: gauss_noise_sigma: 0.1
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 6014582
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 6076588
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 6138594
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 6200600
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_diff_float32(hokeun_params, params): 62004
+[92mINFO [0m:      configure_evaluate: no clients selected, skipping evaluation
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 26]
+[92mINFO [0m:      configure_fit: strategy sampled 5 clients (out of 5)
+[36m(ClientAppActor pid=543717)[0m [92mINFO [0m:      Starting training...[32m [repeated 5x across cluster][0m
+[92mINFO [0m:      aggregate_fit: received 5 results and 0 failures
+[92mINFO [0m:      Hokeun! aggregate_fit: self.inplace
+[92mINFO [0m:      Hokeun! aggregate_inplace: beginning
+[92mINFO [0m:      Hokeun! aggregate_inplace: noise_enabled: True
+[92mINFO [0m:      Hokeun! aggregate_inplace: gauss_noise_sigma: 0.1
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 6262606
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 6324612
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 6386618
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 6448624
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_diff_float32(hokeun_params, params): 62005
+[92mINFO [0m:      configure_evaluate: no clients selected, skipping evaluation
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 27]
+[92mINFO [0m:      configure_fit: strategy sampled 5 clients (out of 5)
+[36m(ClientAppActor pid=543718)[0m [92mINFO [0m:      Starting training...[32m [repeated 5x across cluster][0m
+[92mINFO [0m:      aggregate_fit: received 5 results and 0 failures
+[92mINFO [0m:      Hokeun! aggregate_fit: self.inplace
+[92mINFO [0m:      Hokeun! aggregate_inplace: beginning
+[92mINFO [0m:      Hokeun! aggregate_inplace: noise_enabled: True
+[92mINFO [0m:      Hokeun! aggregate_inplace: gauss_noise_sigma: 0.1
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 6510630
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 6572636
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 6634642
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 6696648
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_diff_float32(hokeun_params, params): 62006
+[92mINFO [0m:      configure_evaluate: no clients selected, skipping evaluation
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 28]
+[92mINFO [0m:      configure_fit: strategy sampled 5 clients (out of 5)
+[36m(ClientAppActor pid=543716)[0m [92mINFO [0m:      Starting training...[32m [repeated 5x across cluster][0m
+[92mINFO [0m:      aggregate_fit: received 5 results and 0 failures
+[92mINFO [0m:      Hokeun! aggregate_fit: self.inplace
+[92mINFO [0m:      Hokeun! aggregate_inplace: beginning
+[92mINFO [0m:      Hokeun! aggregate_inplace: noise_enabled: True
+[92mINFO [0m:      Hokeun! aggregate_inplace: gauss_noise_sigma: 0.1
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 6758654
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 6820660
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 6882666
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 6944672
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_diff_float32(hokeun_params, params): 62005
+[92mINFO [0m:      configure_evaluate: no clients selected, skipping evaluation
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 29]
+[92mINFO [0m:      configure_fit: strategy sampled 5 clients (out of 5)
+[36m(ClientAppActor pid=543723)[0m [92mINFO [0m:      Starting training...[32m [repeated 5x across cluster][0m
+[92mINFO [0m:      aggregate_fit: received 5 results and 0 failures
+[92mINFO [0m:      Hokeun! aggregate_fit: self.inplace
+[92mINFO [0m:      Hokeun! aggregate_inplace: beginning
+[92mINFO [0m:      Hokeun! aggregate_inplace: noise_enabled: True
+[92mINFO [0m:      Hokeun! aggregate_inplace: gauss_noise_sigma: 0.1
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 7006678
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 7068684
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 7130690
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 7192696
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_diff_float32(hokeun_params, params): 62006
+[92mINFO [0m:      configure_evaluate: no clients selected, skipping evaluation
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 30]
+[92mINFO [0m:      configure_fit: strategy sampled 5 clients (out of 5)
+[36m(ClientAppActor pid=543722)[0m [92mINFO [0m:      Starting training...[32m [repeated 5x across cluster][0m
+[92mINFO [0m:      aggregate_fit: received 5 results and 0 failures
+[92mINFO [0m:      Hokeun! aggregate_fit: self.inplace
+[92mINFO [0m:      Hokeun! aggregate_inplace: beginning
+[92mINFO [0m:      Hokeun! aggregate_inplace: noise_enabled: True
+[92mINFO [0m:      Hokeun! aggregate_inplace: gauss_noise_sigma: 0.1
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 7254702
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 7316708
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 7378714
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 7440720
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_diff_float32(hokeun_params, params): 62006
+[92mINFO [0m:      configure_evaluate: no clients selected, skipping evaluation
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 31]
+[92mINFO [0m:      configure_fit: strategy sampled 5 clients (out of 5)
+[36m(ClientAppActor pid=543718)[0m [92mINFO [0m:      Starting training...[32m [repeated 5x across cluster][0m
+[92mINFO [0m:      aggregate_fit: received 5 results and 0 failures
+[92mINFO [0m:      Hokeun! aggregate_fit: self.inplace
+[92mINFO [0m:      Hokeun! aggregate_inplace: beginning
+[92mINFO [0m:      Hokeun! aggregate_inplace: noise_enabled: True
+[92mINFO [0m:      Hokeun! aggregate_inplace: gauss_noise_sigma: 0.1
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 7502726
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 7564732
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 7626738
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 7688744
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_diff_float32(hokeun_params, params): 62005
+[92mINFO [0m:      configure_evaluate: no clients selected, skipping evaluation
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 32]
+[92mINFO [0m:      configure_fit: strategy sampled 5 clients (out of 5)
+[36m(ClientAppActor pid=543723)[0m [92mINFO [0m:      Starting training...[32m [repeated 5x across cluster][0m
+[92mINFO [0m:      aggregate_fit: received 5 results and 0 failures
+[92mINFO [0m:      Hokeun! aggregate_fit: self.inplace
+[92mINFO [0m:      Hokeun! aggregate_inplace: beginning
+[92mINFO [0m:      Hokeun! aggregate_inplace: noise_enabled: True
+[92mINFO [0m:      Hokeun! aggregate_inplace: gauss_noise_sigma: 0.1
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 7750750
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 7812756
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 7874762
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 7936768
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_diff_float32(hokeun_params, params): 62003
+[92mINFO [0m:      configure_evaluate: no clients selected, skipping evaluation
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 33]
+[92mINFO [0m:      configure_fit: strategy sampled 5 clients (out of 5)
+[36m(ClientAppActor pid=543717)[0m [92mINFO [0m:      Starting training...[32m [repeated 5x across cluster][0m
+[92mINFO [0m:      aggregate_fit: received 5 results and 0 failures
+[92mINFO [0m:      Hokeun! aggregate_fit: self.inplace
+[92mINFO [0m:      Hokeun! aggregate_inplace: beginning
+[92mINFO [0m:      Hokeun! aggregate_inplace: noise_enabled: True
+[92mINFO [0m:      Hokeun! aggregate_inplace: gauss_noise_sigma: 0.1
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 7998774
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 8060780
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 8122786
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 8184792
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_diff_float32(hokeun_params, params): 62005
+[92mINFO [0m:      configure_evaluate: no clients selected, skipping evaluation
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 34]
+[92mINFO [0m:      configure_fit: strategy sampled 5 clients (out of 5)
+[36m(ClientAppActor pid=543722)[0m [92mINFO [0m:      Starting training...[32m [repeated 5x across cluster][0m
+[92mINFO [0m:      aggregate_fit: received 5 results and 0 failures
+[92mINFO [0m:      Hokeun! aggregate_fit: self.inplace
+[92mINFO [0m:      Hokeun! aggregate_inplace: beginning
+[92mINFO [0m:      Hokeun! aggregate_inplace: noise_enabled: True
+[92mINFO [0m:      Hokeun! aggregate_inplace: gauss_noise_sigma: 0.1
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 8246798
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 8308804
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 8370810
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 8432816
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_diff_float32(hokeun_params, params): 62004
+[92mINFO [0m:      configure_evaluate: no clients selected, skipping evaluation
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 35]
+[92mINFO [0m:      configure_fit: strategy sampled 5 clients (out of 5)
+[36m(ClientAppActor pid=543718)[0m [92mINFO [0m:      Starting training...[32m [repeated 5x across cluster][0m
+[92mINFO [0m:      aggregate_fit: received 5 results and 0 failures
+[92mINFO [0m:      Hokeun! aggregate_fit: self.inplace
+[92mINFO [0m:      Hokeun! aggregate_inplace: beginning
+[92mINFO [0m:      Hokeun! aggregate_inplace: noise_enabled: True
+[92mINFO [0m:      Hokeun! aggregate_inplace: gauss_noise_sigma: 0.1
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 8494822
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 8556828
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 8618834
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 8680840
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_diff_float32(hokeun_params, params): 62004
+[92mINFO [0m:      configure_evaluate: no clients selected, skipping evaluation
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 36]
+[92mINFO [0m:      configure_fit: strategy sampled 5 clients (out of 5)
+[36m(ClientAppActor pid=543717)[0m [92mINFO [0m:      Starting training...[32m [repeated 5x across cluster][0m
+[92mINFO [0m:      aggregate_fit: received 5 results and 0 failures
+[92mINFO [0m:      Hokeun! aggregate_fit: self.inplace
+[92mINFO [0m:      Hokeun! aggregate_inplace: beginning
+[92mINFO [0m:      Hokeun! aggregate_inplace: noise_enabled: True
+[92mINFO [0m:      Hokeun! aggregate_inplace: gauss_noise_sigma: 0.1
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 8742846
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 8804852
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 8866858
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 8928864
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_diff_float32(hokeun_params, params): 62006
+[92mINFO [0m:      configure_evaluate: no clients selected, skipping evaluation
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 37]
+[92mINFO [0m:      configure_fit: strategy sampled 5 clients (out of 5)
+[36m(ClientAppActor pid=543722)[0m [92mINFO [0m:      Starting training...[32m [repeated 5x across cluster][0m
+[92mINFO [0m:      aggregate_fit: received 5 results and 0 failures
+[92mINFO [0m:      Hokeun! aggregate_fit: self.inplace
+[92mINFO [0m:      Hokeun! aggregate_inplace: beginning
+[92mINFO [0m:      Hokeun! aggregate_inplace: noise_enabled: True
+[92mINFO [0m:      Hokeun! aggregate_inplace: gauss_noise_sigma: 0.1
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 8990870
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 9052876
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 9114882
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 9176888
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_diff_float32(hokeun_params, params): 62003
+[92mINFO [0m:      configure_evaluate: no clients selected, skipping evaluation
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 38]
+[92mINFO [0m:      configure_fit: strategy sampled 5 clients (out of 5)
+[36m(ClientAppActor pid=543718)[0m [92mINFO [0m:      Starting training...[32m [repeated 5x across cluster][0m
+[92mINFO [0m:      aggregate_fit: received 5 results and 0 failures
+[92mINFO [0m:      Hokeun! aggregate_fit: self.inplace
+[92mINFO [0m:      Hokeun! aggregate_inplace: beginning
+[92mINFO [0m:      Hokeun! aggregate_inplace: noise_enabled: True
+[92mINFO [0m:      Hokeun! aggregate_inplace: gauss_noise_sigma: 0.1
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 9238894
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 9300900
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 9362906
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 9424912
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_diff_float32(hokeun_params, params): 62005
+[92mINFO [0m:      configure_evaluate: no clients selected, skipping evaluation
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 39]
+[92mINFO [0m:      configure_fit: strategy sampled 5 clients (out of 5)
+[36m(ClientAppActor pid=543717)[0m [92mINFO [0m:      Starting training...[32m [repeated 5x across cluster][0m
+[92mINFO [0m:      aggregate_fit: received 5 results and 0 failures
+[92mINFO [0m:      Hokeun! aggregate_fit: self.inplace
+[92mINFO [0m:      Hokeun! aggregate_inplace: beginning
+[92mINFO [0m:      Hokeun! aggregate_inplace: noise_enabled: True
+[92mINFO [0m:      Hokeun! aggregate_inplace: gauss_noise_sigma: 0.1
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 9486918
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 9548924
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 9610930
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 9672936
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_diff_float32(hokeun_params, params): 62005
+[92mINFO [0m:      configure_evaluate: no clients selected, skipping evaluation
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 40]
+[92mINFO [0m:      configure_fit: strategy sampled 5 clients (out of 5)
+[36m(ClientAppActor pid=543721)[0m [92mINFO [0m:      Starting training...[32m [repeated 5x across cluster][0m
+[92mINFO [0m:      aggregate_fit: received 5 results and 0 failures
+[92mINFO [0m:      Hokeun! aggregate_fit: self.inplace
+[92mINFO [0m:      Hokeun! aggregate_inplace: beginning
+[92mINFO [0m:      Hokeun! aggregate_inplace: noise_enabled: True
+[92mINFO [0m:      Hokeun! aggregate_inplace: gauss_noise_sigma: 0.1
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 9734942
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 9796948
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 9858954
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 9920960
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_diff_float32(hokeun_params, params): 62005
+[92mINFO [0m:      configure_evaluate: no clients selected, skipping evaluation
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 41]
+[92mINFO [0m:      configure_fit: strategy sampled 5 clients (out of 5)
+[36m(ClientAppActor pid=543718)[0m [92mINFO [0m:      Starting training...[32m [repeated 5x across cluster][0m
+[92mINFO [0m:      aggregate_fit: received 5 results and 0 failures
+[92mINFO [0m:      Hokeun! aggregate_fit: self.inplace
+[92mINFO [0m:      Hokeun! aggregate_inplace: beginning
+[92mINFO [0m:      Hokeun! aggregate_inplace: noise_enabled: True
+[92mINFO [0m:      Hokeun! aggregate_inplace: gauss_noise_sigma: 0.1
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 9982966
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 10044972
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 10106978
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 10168984
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_diff_float32(hokeun_params, params): 62005
+[92mINFO [0m:      configure_evaluate: no clients selected, skipping evaluation
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 42]
+[92mINFO [0m:      configure_fit: strategy sampled 5 clients (out of 5)
+[36m(ClientAppActor pid=543723)[0m [92mINFO [0m:      Starting training...[32m [repeated 5x across cluster][0m
+[92mINFO [0m:      aggregate_fit: received 5 results and 0 failures
+[92mINFO [0m:      Hokeun! aggregate_fit: self.inplace
+[92mINFO [0m:      Hokeun! aggregate_inplace: beginning
+[92mINFO [0m:      Hokeun! aggregate_inplace: noise_enabled: True
+[92mINFO [0m:      Hokeun! aggregate_inplace: gauss_noise_sigma: 0.1
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 10230990
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 10292996
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 10355002
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 10417008
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_diff_float32(hokeun_params, params): 62005
+[92mINFO [0m:      configure_evaluate: no clients selected, skipping evaluation
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 43]
+[92mINFO [0m:      configure_fit: strategy sampled 5 clients (out of 5)
+[36m(ClientAppActor pid=543717)[0m [92mINFO [0m:      Starting training...[32m [repeated 5x across cluster][0m
+[92mINFO [0m:      aggregate_fit: received 5 results and 0 failures
+[92mINFO [0m:      Hokeun! aggregate_fit: self.inplace
+[92mINFO [0m:      Hokeun! aggregate_inplace: beginning
+[92mINFO [0m:      Hokeun! aggregate_inplace: noise_enabled: True
+[92mINFO [0m:      Hokeun! aggregate_inplace: gauss_noise_sigma: 0.1
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 10479014
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 10541020
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 10603026
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 10665032
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_diff_float32(hokeun_params, params): 62004
+[92mINFO [0m:      configure_evaluate: no clients selected, skipping evaluation
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 44]
+[92mINFO [0m:      configure_fit: strategy sampled 5 clients (out of 5)
+[36m(ClientAppActor pid=543718)[0m [92mINFO [0m:      Starting training...[32m [repeated 5x across cluster][0m
+[92mINFO [0m:      aggregate_fit: received 5 results and 0 failures
+[92mINFO [0m:      Hokeun! aggregate_fit: self.inplace
+[92mINFO [0m:      Hokeun! aggregate_inplace: beginning
+[92mINFO [0m:      Hokeun! aggregate_inplace: noise_enabled: True
+[92mINFO [0m:      Hokeun! aggregate_inplace: gauss_noise_sigma: 0.1
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 10727038
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 10789044
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 10851050
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 10913056
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_diff_float32(hokeun_params, params): 62004
+[92mINFO [0m:      configure_evaluate: no clients selected, skipping evaluation
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 45]
+[92mINFO [0m:      configure_fit: strategy sampled 5 clients (out of 5)
+[36m(ClientAppActor pid=543723)[0m [92mINFO [0m:      Starting training...[32m [repeated 5x across cluster][0m
+[92mINFO [0m:      aggregate_fit: received 5 results and 0 failures
+[92mINFO [0m:      Hokeun! aggregate_fit: self.inplace
+[92mINFO [0m:      Hokeun! aggregate_inplace: beginning
+[92mINFO [0m:      Hokeun! aggregate_inplace: noise_enabled: True
+[92mINFO [0m:      Hokeun! aggregate_inplace: gauss_noise_sigma: 0.1
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 10975062
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 11037068
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 11099074
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 11161080
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_diff_float32(hokeun_params, params): 62005
+[92mINFO [0m:      configure_evaluate: no clients selected, skipping evaluation
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 46]
+[92mINFO [0m:      configure_fit: strategy sampled 5 clients (out of 5)
+[36m(ClientAppActor pid=543716)[0m [92mINFO [0m:      Starting training...[32m [repeated 5x across cluster][0m
+[92mINFO [0m:      aggregate_fit: received 5 results and 0 failures
+[92mINFO [0m:      Hokeun! aggregate_fit: self.inplace
+[92mINFO [0m:      Hokeun! aggregate_inplace: beginning
+[92mINFO [0m:      Hokeun! aggregate_inplace: noise_enabled: True
+[92mINFO [0m:      Hokeun! aggregate_inplace: gauss_noise_sigma: 0.1
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 11223086
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 11285092
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 11347098
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 11409104
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_diff_float32(hokeun_params, params): 62005
+[92mINFO [0m:      configure_evaluate: no clients selected, skipping evaluation
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 47]
+[92mINFO [0m:      configure_fit: strategy sampled 5 clients (out of 5)
+[36m(ClientAppActor pid=543718)[0m [92mINFO [0m:      Starting training...[32m [repeated 5x across cluster][0m
+[92mINFO [0m:      aggregate_fit: received 5 results and 0 failures
+[92mINFO [0m:      Hokeun! aggregate_fit: self.inplace
+[92mINFO [0m:      Hokeun! aggregate_inplace: beginning
+[92mINFO [0m:      Hokeun! aggregate_inplace: noise_enabled: True
+[92mINFO [0m:      Hokeun! aggregate_inplace: gauss_noise_sigma: 0.1
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 11471110
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 11533116
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 11595122
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 11657128
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_diff_float32(hokeun_params, params): 62006
+[92mINFO [0m:      configure_evaluate: no clients selected, skipping evaluation
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 48]
+[92mINFO [0m:      configure_fit: strategy sampled 5 clients (out of 5)
+[36m(ClientAppActor pid=543723)[0m [92mINFO [0m:      Starting training...[32m [repeated 5x across cluster][0m
+[92mINFO [0m:      aggregate_fit: received 5 results and 0 failures
+[92mINFO [0m:      Hokeun! aggregate_fit: self.inplace
+[92mINFO [0m:      Hokeun! aggregate_inplace: beginning
+[92mINFO [0m:      Hokeun! aggregate_inplace: noise_enabled: True
+[92mINFO [0m:      Hokeun! aggregate_inplace: gauss_noise_sigma: 0.1
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 11719134
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 11781140
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 11843146
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 11905152
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_diff_float32(hokeun_params, params): 62003
+[92mINFO [0m:      configure_evaluate: no clients selected, skipping evaluation
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 49]
+[92mINFO [0m:      configure_fit: strategy sampled 5 clients (out of 5)
+[36m(ClientAppActor pid=543716)[0m [92mINFO [0m:      Starting training...[32m [repeated 5x across cluster][0m
+[92mINFO [0m:      aggregate_fit: received 5 results and 0 failures
+[92mINFO [0m:      Hokeun! aggregate_fit: self.inplace
+[92mINFO [0m:      Hokeun! aggregate_inplace: beginning
+[92mINFO [0m:      Hokeun! aggregate_inplace: noise_enabled: True
+[92mINFO [0m:      Hokeun! aggregate_inplace: gauss_noise_sigma: 0.1
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 11967158
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 12029164
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 12091170
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 12153176
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_diff_float32(hokeun_params, params): 62005
+[92mINFO [0m:      configure_evaluate: no clients selected, skipping evaluation
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 50]
+[92mINFO [0m:      configure_fit: strategy sampled 5 clients (out of 5)
+[36m(ClientAppActor pid=543718)[0m [92mINFO [0m:      Starting training...[32m [repeated 5x across cluster][0m
+[92mINFO [0m:      aggregate_fit: received 5 results and 0 failures
+[92mINFO [0m:      Hokeun! aggregate_fit: self.inplace
+[92mINFO [0m:      Hokeun! aggregate_inplace: beginning
+[92mINFO [0m:      Hokeun! aggregate_inplace: noise_enabled: True
+[92mINFO [0m:      Hokeun! aggregate_inplace: gauss_noise_sigma: 0.1
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 12215182
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 12277188
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 12339194
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: mult_count: 12401200
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_count_float32(hokeun_params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_count_float32(params): 62006
+[92mINFO [0m:      Hokeun! aggregate_inplace: Final results: hokeun_deep_diff_float32(hokeun_params, params): 62005
+[92mINFO [0m:      configure_evaluate: no clients selected, skipping evaluation
+[92mINFO [0m:      
+[92mINFO [0m:      Hokeun! [SUMMARY]
+[92mINFO [0m:      Run finished 50 round(s) in 1277.65s
+[92mINFO [0m:      	History (metrics, distributed, fit):
+[92mINFO [0m:      	{'train_accuracy': [(1, 0.255348),
+[92mINFO [0m:      	                    (2, 0.36098),
+[92mINFO [0m:      	                    (3, 0.428452),
+[92mINFO [0m:      	                    (4, 0.478536),
+[92mINFO [0m:      	                    (5, 0.515712),
+[92mINFO [0m:      	                    (6, 0.539076),
+[92mINFO [0m:      	                    (7, 0.568404),
+[92mINFO [0m:      	                    (8, 0.587072),
+[92mINFO [0m:      	                    (9, 0.601188),
+[92mINFO [0m:      	                    (10, 0.61936),
+[92mINFO [0m:      	                    (11, 0.630952),
+[92mINFO [0m:      	                    (12, 0.636572),
+[92mINFO [0m:      	                    (13, 0.651104),
+[92mINFO [0m:      	                    (14, 0.661572),
+[92mINFO [0m:      	                    (15, 0.67304),
+[92mINFO [0m:      	                    (16, 0.675344),
+[92mINFO [0m:      	                    (17, 0.688128),
+[92mINFO [0m:      	                    (18, 0.696),
+[92mINFO [0m:      	                    (19, 0.702108),
+[92mINFO [0m:      	                    (20, 0.711896),
+[92mINFO [0m:      	                    (21, 0.71556),
+[92mINFO [0m:      	                    (22, 0.723408),
+[92mINFO [0m:      	                    (23, 0.73502),
+[92mINFO [0m:      	                    (24, 0.742356),
+[92mINFO [0m:      	                    (25, 0.749612),
+[92mINFO [0m:      	                    (26, 0.750144),
+[92mINFO [0m:      	                    (27, 0.754484),
+[92mINFO [0m:      	                    (28, 0.765188),
+[92mINFO [0m:      	                    (29, 0.774536),
+[92mINFO [0m:      	                    (30, 0.773652),
+[92mINFO [0m:      	                    (31, 0.782364),
+[92mINFO [0m:      	                    (32, 0.781632),
+[92mINFO [0m:      	                    (33, 0.789136),
+[92mINFO [0m:      	                    (34, 0.795164),
+[92mINFO [0m:      	                    (35, 0.798264),
+[92mINFO [0m:      	                    (36, 0.815808),
+[92mINFO [0m:      	                    (37, 0.809632),
+[92mINFO [0m:      	                    (38, 0.817468),
+[92mINFO [0m:      	                    (39, 0.821904),
+[92mINFO [0m:      	                    (40, 0.825056),
+[92mINFO [0m:      	                    (41, 0.831988),
+[92mINFO [0m:      	                    (42, 0.831616),
+[92mINFO [0m:      	                    (43, 0.841656),
+[92mINFO [0m:      	                    (44, 0.841632),
+[92mINFO [0m:      	                    (45, 0.851244),
+[92mINFO [0m:      	                    (46, 0.852964),
+[92mINFO [0m:      	                    (47, 0.856964),
+[92mINFO [0m:      	                    (48, 0.862636),
+[92mINFO [0m:      	                    (49, 0.861512),
+[92mINFO [0m:      	                    (50, 0.870712)],
+[92mINFO [0m:      	 'train_loss': [(1, 3227.034551000595),
+[92mINFO [0m:      	                (2, 2684.5518392801287),
+[92mINFO [0m:      	                (3, 2432.5277193784714),
+[92mINFO [0m:      	                (4, 2243.1832369327544),
+[92mINFO [0m:      	                (5, 2098.7420739531517),
+[92mINFO [0m:      	                (6, 2007.3071145892143),
+[92mINFO [0m:      	                (7, 1898.0447962403298),
+[92mINFO [0m:      	                (8, 1822.229253757),
+[92mINFO [0m:      	                (9, 1760.9870507359506),
+[92mINFO [0m:      	                (10, 1693.7623591423035),
+[92mINFO [0m:      	                (11, 1635.7907715320587),
+[92mINFO [0m:      	                (12, 1613.0055204927921),
+[92mINFO [0m:      	                (13, 1554.3386950433255),
+[92mINFO [0m:      	                (14, 1514.4577651500701),
+[92mINFO [0m:      	                (15, 1459.367581307888),
+[92mINFO [0m:      	                (16, 1447.848225057125),
+[92mINFO [0m:      	                (17, 1394.115542113781),
+[92mINFO [0m:      	                (18, 1363.9971634507178),
+[92mINFO [0m:      	                (19, 1333.224582260847),
+[92mINFO [0m:      	                (20, 1292.2426349759103),
+[92mINFO [0m:      	                (21, 1274.8022546112538),
+[92mINFO [0m:      	                (22, 1231.2805603265763),
+[92mINFO [0m:      	                (23, 1187.5477886587382),
+[92mINFO [0m:      	                (24, 1154.00141556561),
+[92mINFO [0m:      	                (25, 1125.7820078372956),
+[92mINFO [0m:      	                (26, 1115.768609443307),
+[92mINFO [0m:      	                (27, 1095.7681447565556),
+[92mINFO [0m:      	                (28, 1053.1778180360793),
+[92mINFO [0m:      	                (29, 1011.5088276982308),
+[92mINFO [0m:      	                (30, 1004.7032623171806),
+[92mINFO [0m:      	                (31, 970.6557889282703),
+[92mINFO [0m:      	                (32, 965.8593519866466),
+[92mINFO [0m:      	                (33, 936.8464331746102),
+[92mINFO [0m:      	                (34, 910.5716923892498),
+[92mINFO [0m:      	                (35, 897.2891142845153),
+[92mINFO [0m:      	                (36, 828.4190818652511),
+[92mINFO [0m:      	                (37, 841.9005017399788),
+[92mINFO [0m:      	                (38, 815.6418900310994),
+[92mINFO [0m:      	                (39, 790.6374456912279),
+[92mINFO [0m:      	                (40, 775.7714890658856),
+[92mINFO [0m:      	                (41, 746.9235011741519),
+[92mINFO [0m:      	                (42, 742.8436819165945),
+[92mINFO [0m:      	                (43, 706.6698561936616),
+[92mINFO [0m:      	                (44, 697.4708981007337),
+[92mINFO [0m:      	                (45, 663.3526007503272),
+[92mINFO [0m:      	                (46, 655.8571355462075),
+[92mINFO [0m:      	                (47, 635.5721640393137),
+[92mINFO [0m:      	                (48, 609.3605590179562),
+[92mINFO [0m:      	                (49, 606.5524172335863),
+[92mINFO [0m:      	                (50, 574.5076383590698)],
+[92mINFO [0m:      	 'val_accuracy': [(1, 0.26124),
+[92mINFO [0m:      	                  (2, 0.36396),
+[92mINFO [0m:      	                  (3, 0.42852),
+[92mINFO [0m:      	                  (4, 0.476),
+[92mINFO [0m:      	                  (5, 0.5128),
+[92mINFO [0m:      	                  (6, 0.53422),
+[92mINFO [0m:      	                  (7, 0.55972),
+[92mINFO [0m:      	                  (8, 0.57612),
+[92mINFO [0m:      	                  (9, 0.58584),
+[92mINFO [0m:      	                  (10, 0.5966),
+[92mINFO [0m:      	                  (11, 0.60642),
+[92mINFO [0m:      	                  (12, 0.60764),
+[92mINFO [0m:      	                  (13, 0.61626),
+[92mINFO [0m:      	                  (14, 0.62122),
+[92mINFO [0m:      	                  (15, 0.6248),
+[92mINFO [0m:      	                  (16, 0.6241),
+[92mINFO [0m:      	                  (17, 0.63016),
+[92mINFO [0m:      	                  (18, 0.63024),
+[92mINFO [0m:      	                  (19, 0.63046),
+[92mINFO [0m:      	                  (20, 0.63338),
+[92mINFO [0m:      	                  (21, 0.6343),
+[92mINFO [0m:      	                  (22, 0.63582),
+[92mINFO [0m:      	                  (23, 0.63938),
+[92mINFO [0m:      	                  (24, 0.64184),
+[92mINFO [0m:      	                  (25, 0.63786),
+[92mINFO [0m:      	                  (26, 0.6369),
+[92mINFO [0m:      	                  (27, 0.63662),
+[92mINFO [0m:      	                  (28, 0.6368),
+[92mINFO [0m:      	                  (29, 0.63874),
+[92mINFO [0m:      	                  (30, 0.6373),
+[92mINFO [0m:      	                  (31, 0.63684),
+[92mINFO [0m:      	                  (32, 0.63486),
+[92mINFO [0m:      	                  (33, 0.6326),
+[92mINFO [0m:      	                  (34, 0.63366),
+[92mINFO [0m:      	                  (35, 0.63106),
+[92mINFO [0m:      	                  (36, 0.63686),
+[92mINFO [0m:      	                  (37, 0.63262),
+[92mINFO [0m:      	                  (38, 0.6318),
+[92mINFO [0m:      	                  (39, 0.62984),
+[92mINFO [0m:      	                  (40, 0.62754),
+[92mINFO [0m:      	                  (41, 0.63088),
+[92mINFO [0m:      	                  (42, 0.62844),
+[92mINFO [0m:      	                  (43, 0.62594),
+[92mINFO [0m:      	                  (44, 0.62402),
+[92mINFO [0m:      	                  (45, 0.62748),
+[92mINFO [0m:      	                  (46, 0.62402),
+[92mINFO [0m:      	                  (47, 0.62284),
+[92mINFO [0m:      	                  (48, 0.61994),
+[92mINFO [0m:      	                  (49, 0.62074),
+[92mINFO [0m:      	                  (50, 0.62156)],
+[92mINFO [0m:      	 'val_loss': [(1, 20593.406486201286),
+[92mINFO [0m:      	              (2, 17097.58731658533),
+[92mINFO [0m:      	              (3, 15552.265477974712),
+[92mINFO [0m:      	              (4, 14360.934962881916),
+[92mINFO [0m:      	              (5, 13502.503906628304),
+[92mINFO [0m:      	              (6, 13010.331559168224),
+[92mINFO [0m:      	              (7, 12403.006757460942),
+[92mINFO [0m:      	              (8, 12043.823159672063),
+[92mINFO [0m:      	              (9, 11762.652632933406),
+[92mINFO [0m:      	              (10, 11436.820490517872),
+[92mINFO [0m:      	              (11, 11249.040761600005),
+[92mINFO [0m:      	              (12, 11260.532572261425),
+[92mINFO [0m:      	              (13, 11037.579878643712),
+[92mINFO [0m:      	              (14, 10893.296394131661),
+[92mINFO [0m:      	              (15, 10792.05818277401),
+[92mINFO [0m:      	              (16, 10858.994244628804),
+[92mINFO [0m:      	              (17, 10708.505358571896),
+[92mINFO [0m:      	              (18, 10702.89467078629),
+[92mINFO [0m:      	              (19, 10696.283680479823),
+[92mINFO [0m:      	              (20, 10699.329244119426),
+[92mINFO [0m:      	              (21, 10788.804836910787),
+[92mINFO [0m:      	              (22, 10723.55541778162),
+[92mINFO [0m:      	              (23, 10709.953926823155),
+[92mINFO [0m:      	              (24, 10682.07158386208),
+[92mINFO [0m:      	              (25, 10743.86127566632),
+[92mINFO [0m:      	              (26, 10959.939445248418),
+[92mINFO [0m:      	              (27, 11049.835142278609),
+[92mINFO [0m:      	              (28, 11071.519102873272),
+[92mINFO [0m:      	              (29, 11138.640827985893),
+[92mINFO [0m:      	              (30, 11374.252055320658),
+[92mINFO [0m:      	              (31, 11379.502783285407),
+[92mINFO [0m:      	              (32, 11649.50268134051),
+[92mINFO [0m:      	              (33, 11879.728067610546),
+[92mINFO [0m:      	              (34, 11966.82619563358),
+[92mINFO [0m:      	              (35, 12132.646024791738),
+[92mINFO [0m:      	              (36, 11985.628623832154),
+[92mINFO [0m:      	              (37, 12430.00511541042),
+[92mINFO [0m:      	              (38, 12669.792665038503),
+[92mINFO [0m:      	              (39, 12790.613292665561),
+[92mINFO [0m:      	              (40, 12869.099269802055),
+[92mINFO [0m:      	              (41, 13125.366132567597),
+[92mINFO [0m:      	              (42, 13449.637522036708),
+[92mINFO [0m:      	              (43, 13668.471421945655),
+[92mINFO [0m:      	              (44, 14078.196685092968),
+[92mINFO [0m:      	              (45, 14171.668463225737),
+[92mINFO [0m:      	              (46, 14414.200033025065),
+[92mINFO [0m:      	              (47, 14830.939602978136),
+[92mINFO [0m:      	              (48, 15178.423615599766),
+[92mINFO [0m:      	              (49, 15359.822444422087),
+[92mINFO [0m:      	              (50, 15595.357781055807)]}
+[92mINFO [0m:      
+[36m(ClientAppActor pid=543724)[0m [92mINFO [0m:      Starting training...[32m [repeated 4x across cluster][0m
+Files already downloaded and verified
+Files already downloaded and verified
+[36m(ClientAppActor pid=543718)[0m Files already downloaded and verified
+[36m(ClientAppActor pid=543721)[0m Files already downloaded and verified[32m [repeated 10x across cluster] (Ray deduplicates logs by default. Set RAY_DEDUP_LOGS=0 to disable log deduplication, or see https://docs.ray.io/en/master/ray-observability/ray-logging.html#log-deduplication for more options.)[0m
+[36m(ClientAppActor pid=543728)[0m Files already downloaded and verified[32m [repeated 10x across cluster][0m
+[36m(ClientAppActor pid=543731)[0m Files already downloaded and verified[32m [repeated 10x across cluster][0m
+[36m(ClientAppActor pid=543731)[0m Files already downloaded and verified
