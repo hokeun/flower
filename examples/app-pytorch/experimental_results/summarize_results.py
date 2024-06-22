@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 import argparse
 import os
 
@@ -32,15 +34,31 @@ def get_summary(file_path: str):
                 state = SummaryState.VAL_ACCURACY
             if "'val_loss'" in line:
                 state = SummaryState.VAL_LOSS
-            
+
         # Get data
         if state != SummaryState.NONE:
             tuple_str = re.findall(r"\(.*?\)", line)
             tuple_str = re.sub("[()]", "", tuple_str[0])
             tuple = [x.strip() for x in tuple_str.split(",")]
             tuple = [int(tuple[0]), float(tuple[1])]
-            print("Hokeun! ", tuple)
-        
+
+            if state == SummaryState.TRAIN_ACCURACY:
+                train_accuracy.append(tuple)
+            if state == SummaryState.TRAIN_LOSS:
+                train_loss.append(tuple)
+            if state == SummaryState.VAL_ACCURACY:
+                val_accuracy.append(tuple)
+            if state == SummaryState.VAL_LOSS:
+                val_loss.append(tuple)
+
+            if "]" in line:
+                state = SummaryState.NONE
+    
+
+    # print("Hokeun! train_accuracy: ", train_accuracy)
+    # print("Hokeun! train_loss: ", train_loss)
+    # print("Hokeun! val_accuracy: ", val_accuracy)
+    # print("Hokeun! val_loss: ", val_loss)
         # count += 1
         # print("Line {}: {}".format(count, line.strip()))
         # if count > 10:
